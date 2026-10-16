@@ -1,0 +1,34 @@
+{
+  "source_v27_run": "/mnt/nas/swine/home/jxwu/Projects/A/07.HiChIP/NFkB_target_loci_0h_6h_v2/06_chromatin_state_v1/27_Yun_ATAC_consensus_H3K27ac_CRE_motif_v1/run_41129",
+  "output_root": "/mnt/nas/swine/home/jxwu/Projects/A/07.HiChIP/NFkB_target_loci_0h_6h_v2/06_chromatin_state_v1/32_final_AME_1p5_500bp_HiChIP_targets_draft_v1",
+  "reference_fasta": "/mnt/nas/swine/home/jxwu/Projects/references/pig/Sscrofa11.1/genome.fa",
+  "gtf": "/mnt/nas/swine/home/jxwu/Projects/references/pig/Sscrofa11.1/genes.Ensembl_115.gtf.gz",
+  "annotation_tsv": "/mnt/nas/swine/home/jxwu/Projects/references/pig/Sscrofa11.1/functional_20260907/pig_gene_functions.tsv",
+  "motif_database": "/mnt/nas/swine/home/jxwu/Projects/references/motifs/JASPAR2026/JASPAR2026_CORE_vertebrates_non-redundant_pfms_meme.txt",
+  "motif_env": "/mnt/nas/swine/home/jxwu/Projects/A/envs/motif",
+  "loops": {
+    "strength": "/mnt/nas/swine/home/jxwu/Projects/A/07.HiChIP/AH-2-8-14.FitHiChIP.interactions_FitHiC_Q0.01_MergeNearContacts.bedpe",
+    "weaken": "/mnt/nas/swine/home/jxwu/Projects/A/07.HiChIP/AH-1-7-13.FitHiChIP.interactions_FitHiC_Q0.01_MergeNearContacts.bedpe"
+  },
+  "loop_times": {
+    "strength": "6h",
+    "weaken": "0h"
+  },
+  "ame_q_field": "AME_BH_q_within_contrast",
+  "ame_q": 0.05,
+  "fimo_p": 0.0001,
+  "loop_q": 0.01,
+  "promoter_half_width": 2000,
+  "promoter_peak_inputs": {
+    "H3K27ac_0h": "/mnt/nas/swine/home/jxwu/Projects/A/06.peak/0h_H3K27ac_PAM_pval_5_qval_2.narrowPeak.sort.bed",
+    "H3K27ac_6h": "/mnt/nas/swine/home/jxwu/Projects/A/06.peak/6h_H3K27ac_PAM_pval_5_qval_2.narrowPeak.sort.bed",
+    "ATAC_0h": "/mnt/nas/swine/home/jxwu/Projects/A/07.HiChIP/NFkB_target_loci_0h_6h_v2/06_chromatin_state_v1/27_Yun_ATAC_consensus_H3K27ac_CRE_motif_v1/run_41129/peaks/ATAC_0h_peaks.narrowPeak",
+    "ATAC_6h": "/mnt/nas/swine/home/jxwu/Projects/A/07.HiChIP/NFkB_target_loci_0h_6h_v2/06_chromatin_state_v1/27_Yun_ATAC_consensus_H3K27ac_CRE_motif_v1/run_41129/peaks/ATAC_6h_peaks.narrowPeak",
+    "H3K4me3_0h": "/mnt/nas/swine/home/jxwu/Projects/A/06.peak/0h_H3K4me3_PAM_pval_5_qval_2.narrowPeak.sort.bed",
+    "H3K4me3_6h": "/mnt/nas/swine/home/jxwu/Projects/A/06.peak/6h_H3K4me3_PAM_pval_5_qval_2.narrowPeak.sort.bed"
+  },
+  "reference_bridge_genes": [
+    "FOXO1", "THRB", "H6PD", "CERS5", "BNIP3L", "LPIN3",
+    "LPL", "PPARD", "SREBF2", "SREBF1", "FABP3", "NDRG1"
+  ]
+}

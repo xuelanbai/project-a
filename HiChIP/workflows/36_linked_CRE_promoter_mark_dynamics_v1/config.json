@@ -1,0 +1,30 @@
+{
+  "project": "/mnt/nas/swine/home/jxwu/Projects/A",
+  "source_enhancer_run": "/mnt/nas/swine/home/jxwu/Projects/A/07.HiChIP/NFkB_target_loci_0h_6h_v2/06_chromatin_state_v1/27_Yun_ATAC_consensus_H3K27ac_CRE_motif_v1/run_41129",
+  "source_promoter_run": "/mnt/nas/swine/home/jxwu/Projects/A/07.HiChIP/NFkB_target_loci_0h_6h_v2/06_chromatin_state_v1/34_P1_promoter_strength_weaken_v1/run_42216",
+  "source_HiChIP_target_run": "/mnt/nas/swine/home/jxwu/Projects/A/07.HiChIP/NFkB_target_loci_0h_6h_v2/06_chromatin_state_v1/32_final_AME_1p5_500bp_HiChIP_targets_draft_v1/run_42014",
+  "results": "/mnt/nas/swine/home/jxwu/Projects/A/07.HiChIP/NFkB_target_loci_0h_6h_v2/06_chromatin_state_v1/36_linked_CRE_promoter_mark_dynamics_v1",
+  "analysis_env": "/mnt/nas/swine/home/jxwu/Projects/A/envs/hichip_locus",
+  "bedtools_env": "/mnt/nas/swine/home/jxwu/Projects/FOODIE/envs/bedtools_intersect",
+  "bam_names": {
+    "H3K27ac_0h": "0h_H3K27ac_merged.nodup.sort.bam",
+    "H3K27ac_6h": "6h_H3K27ac_merged.nodup.sort.bam",
+    "H3K4me3_0h": "0h_H3K4me3_merged.nodup.sort.bam",
+    "H3K4me3_6h": "6h_H3K4me3_merged.nodup.sort.bam",
+    "Pol2_0h": "0h_PAM_pol2_merged.nodup.sort.bam",
+    "Pol2_6h": "6h_PAM_pol2_merged.nodup.sort.bam",
+    "ATAC_0h": "0h_PAM_ATAC_downsample_merged.nodup.sort.bam",
+    "ATAC_6h": "6h_PAM_ATAC_downsample_merged.nodup.sort.bam",
+    "H3K27me3_0h": "0h_PAM_H3K27me3_merged.nodup.sort.bam",
+    "H3K27me3_6h": "6h_PAM_H3K27me3_merged.nodup.sort.bam",
+    "IgG_0h": "0h_PAM_IgG_merged.nodup.sort.bam",
+    "IgG_6h": "6h_PAM_IgG_merged.nodup.sort.bam"
+  },
+  "fold_threshold": 1.5,
+  "min_raw_tags_active_state": 5,
+  "promoter_TSS_half_width": 2000,
+  "min_mapq": 0,
+  "normalization_total_tags": 10000000,
+  "normalized_pseudocount": 0.5,
+  "loop_q_max": 0.01
+}

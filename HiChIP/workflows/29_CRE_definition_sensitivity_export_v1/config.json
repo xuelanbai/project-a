@@ -1,0 +1,19 @@
+{
+  "project": "/mnt/nas/swine/home/jxwu/Projects/A",
+  "source_v27_run": "/mnt/nas/swine/home/jxwu/Projects/A/07.HiChIP/NFkB_target_loci_0h_6h_v2/06_chromatin_state_v1/27_Yun_ATAC_consensus_H3K27ac_CRE_motif_v1/run_41129",
+  "output_root": "/mnt/nas/swine/home/jxwu/Projects/A/07.HiChIP/NFkB_target_loci_0h_6h_v2/06_chromatin_state_v1/29_CRE_definition_sensitivity_export_v1",
+  "gtf": "/mnt/nas/swine/home/jxwu/Projects/references/pig/Sscrofa11.1/genes.Ensembl_115.gtf.gz",
+  "reference_fai": "/mnt/nas/swine/home/jxwu/Projects/references/pig/Sscrofa11.1/genome.fa.fai",
+  "analysis_env": "/mnt/nas/swine/home/jxwu/Projects/A/envs/hichip_locus",
+  "tss_half_widths_bp": [500, 1500, 2000],
+  "atac_peak_files": {
+    "0h": "peaks/ATAC_0h_peaks.narrowPeak",
+    "6h": "peaks/ATAC_6h_peaks.narrowPeak"
+  },
+  "histone_peak_files": {
+    "H3K27ac_0h": "06.peak/0h_H3K27ac_PAM_pval_5_qval_2.narrowPeak.sort.bed",
+    "H3K27ac_6h": "06.peak/6h_H3K27ac_PAM_pval_5_qval_2.narrowPeak.sort.bed",
+    "H3K4me3_0h": "06.peak/0h_H3K4me3_PAM_pval_5_qval_2.narrowPeak.sort.bed",
+    "H3K4me3_6h": "06.peak/6h_H3K4me3_PAM_pval_5_qval_2.narrowPeak.sort.bed"
+  }
+}

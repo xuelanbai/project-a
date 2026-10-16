@@ -1,0 +1,32 @@
+{
+  "output_root": "/mnt/nas/swine/home/jxwu/Projects/A/07.HiChIP/NFkB_target_loci_0h_6h_v2/06_chromatin_state_v1/34_P1_promoter_strength_weaken_v1",
+  "analysis_env": "/mnt/nas/swine/home/jxwu/Projects/A/envs/hichip_locus",
+  "bedtools": "/mnt/nas/swine/home/jxwu/Projects/FOODIE/envs/bedtools_intersect/bin/bedtools",
+  "reference_fasta": "/mnt/nas/swine/home/jxwu/Projects/references/pig/Sscrofa11.1/genome.fa",
+  "gtf": "/mnt/nas/swine/home/jxwu/Projects/references/pig/Sscrofa11.1/genes.Ensembl_115.gtf.gz",
+  "main_chromosomes": [
+    "1", "2", "3", "4", "5", "6", "7", "8", "9",
+    "10", "11", "12", "13", "14", "15", "16", "17", "18", "X", "Y"
+  ],
+  "peak_inputs": {
+    "H3K27ac_0h": "/mnt/nas/swine/home/jxwu/Projects/A/06.peak/0h_H3K27ac_PAM_pval_5_qval_2.narrowPeak.sort.bed",
+    "H3K27ac_6h": "/mnt/nas/swine/home/jxwu/Projects/A/06.peak/6h_H3K27ac_PAM_pval_5_qval_2.narrowPeak.sort.bed",
+    "ATAC_0h": "/mnt/nas/swine/home/jxwu/Projects/A/07.HiChIP/NFkB_target_loci_0h_6h_v2/06_chromatin_state_v1/27_Yun_ATAC_consensus_H3K27ac_CRE_motif_v1/run_41129/peaks/ATAC_0h_peaks.narrowPeak",
+    "ATAC_6h": "/mnt/nas/swine/home/jxwu/Projects/A/07.HiChIP/NFkB_target_loci_0h_6h_v2/06_chromatin_state_v1/27_Yun_ATAC_consensus_H3K27ac_CRE_motif_v1/run_41129/peaks/ATAC_6h_peaks.narrowPeak",
+    "H3K4me3_0h": "/mnt/nas/swine/home/jxwu/Projects/A/06.peak/0h_H3K4me3_PAM_pval_5_qval_2.narrowPeak.sort.bed",
+    "H3K4me3_6h": "/mnt/nas/swine/home/jxwu/Projects/A/06.peak/6h_H3K4me3_PAM_pval_5_qval_2.narrowPeak.sort.bed"
+  },
+  "bam_inputs": {
+    "H3K27ac_0h": "/mnt/nas/swine/home/jxwu/Projects/A/02.bam/0h_H3K27ac_merged.nodup.sort.bam",
+    "H3K27ac_6h": "/mnt/nas/swine/home/jxwu/Projects/A/02.bam/6h_H3K27ac_merged.nodup.sort.bam",
+    "ATAC_0h": "/mnt/nas/swine/home/jxwu/Projects/A/02.bam/0h_PAM_ATAC_downsample_merged.nodup.sort.bam",
+    "ATAC_6h": "/mnt/nas/swine/home/jxwu/Projects/A/02.bam/6h_PAM_ATAC_downsample_merged.nodup.sort.bam"
+  },
+  "promoter_half_width": 2000,
+  "fold_threshold": 1.5,
+  "min_H3K27ac_raw_tags_active_state": 5,
+  "apply_ATAC_raw_count_filter": false,
+  "min_mapq": 0,
+  "normalization_total_tags": 10000000,
+  "normalized_pseudocount": 0.5
+}

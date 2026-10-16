@@ -1,0 +1,42 @@
+{
+  "project": "/mnt/nas/swine/home/jxwu/Projects/A",
+  "reference_fasta": "/mnt/nas/swine/home/jxwu/Projects/references/pig/Sscrofa11.1/genome.fa",
+  "gtf": "/mnt/nas/swine/home/jxwu/Projects/references/pig/Sscrofa11.1/genes.Ensembl_115.gtf.gz",
+  "results": "/mnt/nas/swine/home/jxwu/Projects/A/07.HiChIP/NFkB_target_loci_0h_6h_v2/06_chromatin_state_v1/27_Yun_ATAC_consensus_H3K27ac_CRE_motif_v1",
+  "analysis_env": "/mnt/nas/swine/home/jxwu/Projects/A/envs/hichip_locus",
+  "macs3_env": "/mnt/nas/swine/home/jxwu/Projects/FOODIE/envs/macs3_callpeak",
+  "bedtools_env": "/mnt/nas/swine/home/jxwu/Projects/FOODIE/envs/bedtools_intersect",
+  "motif_env": "/mnt/nas/swine/home/jxwu/Projects/A/envs/motif",
+  "motif_database": "/mnt/nas/swine/home/jxwu/Projects/references/motifs/JASPAR2026/JASPAR2026_CORE_vertebrates_non-redundant_pfms_meme.txt",
+  "bam_names": {
+    "ATAC_0h": "0h_PAM_ATAC_downsample_merged.nodup.sort.bam",
+    "ATAC_6h": "6h_PAM_ATAC_downsample_merged.nodup.sort.bam",
+    "H3K27ac_0h": "0h_H3K27ac_merged.nodup.sort.bam",
+    "H3K27ac_6h": "6h_H3K27ac_merged.nodup.sort.bam"
+  },
+  "peak_names": {
+    "H3K27ac_0h": "0h_H3K27ac_PAM_pval_5_qval_2.narrowPeak.sort.bed",
+    "H3K27ac_6h": "6h_H3K27ac_PAM_pval_5_qval_2.narrowPeak.sort.bed",
+    "H3K4me3_0h": "0h_H3K4me3_PAM_pval_5_qval_2.narrowPeak.sort.bed",
+    "H3K4me3_6h": "6h_H3K4me3_PAM_pval_5_qval_2.narrowPeak.sort.bed"
+  },
+  "legacy_ATAC_peak_names_for_QC_only": {
+    "legacy_ATAC_0h": "0h_ATAC_rep1_rep2_overlap_0.5_final.sort.uniq.bed",
+    "legacy_ATAC_6h": "6h_ATAC_rep1_rep2_overlap_0.5_final.sort.uniq.bed"
+  },
+  "macs3_q": 0.01,
+  "promoter_half_width": 2000,
+  "min_mapq": 0,
+  "min_raw_tags_active_state": 5,
+  "normalization_total_tags": 10000000,
+  "normalized_pseudocount": 0.5,
+  "fold_thresholds": [1.2, 1.5],
+  "motif_window_sizes": [200, 500],
+  "max_N_fraction": 0.05,
+  "max_GC_difference": 0.05,
+  "minimum_matched_fraction": 0.9,
+  "minimum_motif_pairs": 20,
+  "homer_threads": 3,
+  "run_de_novo": false,
+  "seed": 20260913
+}
