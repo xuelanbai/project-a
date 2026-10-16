@@ -1,0 +1,37 @@
+# Local environments and credentials
+**/node_modules/
+**/__pycache__/
+*.pyc
+.env
+.env.*
+*.pem
+*.key
+*.token
+
+# Experimental data and generated artifacts
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.bam
+*.bai
+*.cram
+*.crai
+*.bigWig
+*.bigwig
+*.bw
+*.npz
+*.xlsx
+*.xlsm
+*.pptx
+*.zip
+*.tar.gz
+*.partial
+
+# Top-level runtime outputs; vendor examples remain source material
+/results/
+/results_pig_v2/
+/work/
+/logs/
+/.nextflow/
+/.nextflow.log*

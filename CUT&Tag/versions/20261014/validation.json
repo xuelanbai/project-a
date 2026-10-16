@@ -1,0 +1,118 @@
+{
+  "package": "CUTTag_code_versions_20261014",
+  "validated_at": "2026-10-14T00:38:39.6414653+08:00",
+  "source_copy_sha256": "passed",
+  "custom_code_inventory": "passed",
+  "upstream_license_present": true,
+  "syntax_checks": [
+    {
+      "status": "skipped: Git Bash runtime blocked by local sandbox",
+      "file": "01_v1_legacy/macs2_igg_pval_tracks.slurm",
+      "tool": "bash -n"
+    },
+    {
+      "status": "skipped: Git Bash unavailable or runtime blocked",
+      "file": "02_v2_main/run_cutandrun_pig_v2.slurm",
+      "tool": "bash -n"
+    },
+    {
+      "status": "skipped: Git Bash unavailable or runtime blocked",
+      "file": "02_v2_main/postprocess_cutandtag_pig_v2.slurm",
+      "tool": "bash -n"
+    },
+    {
+      "status": "skipped: Git Bash unavailable or runtime blocked",
+      "file": "02_v2_main/run_cuttag_tss_v2.slurm",
+      "tool": "bash -n"
+    },
+    {
+      "status": "skipped: Git Bash unavailable or runtime blocked",
+      "file": "02_v2_main/collect_cuttag_v2_stats.slurm",
+      "tool": "bash -n"
+    },
+    {
+      "status": "skipped: Git Bash unavailable or runtime blocked",
+      "file": "03_v2_hypothesis_screen/screen_cuttag_interaction_hypotheses.slurm",
+      "tool": "bash -n"
+    },
+    {
+      "status": "skipped: Git Bash unavailable or runtime blocked",
+      "file": "04_signal_v1_legacy/quantify_cuttag_hypothesis_signals.slurm",
+      "tool": "bash -n"
+    },
+    {
+      "status": "skipped: Git Bash unavailable or runtime blocked",
+      "file": "05_signal_v2_exact/quantify_cuttag_signal_qc_v2.slurm",
+      "tool": "bash -n"
+    },
+    {
+      "status": "skipped: Git Bash unavailable or runtime blocked",
+      "file": "06_sensitivity_q05/cuttag_macs2_q05_sensitivity.slurm",
+      "tool": "bash -n"
+    },
+    {
+      "status": "skipped: Git Bash unavailable or runtime blocked",
+      "file": "07_sensitivity_broad_nolambda/cuttag_macs2_broad_nolambda_sensitivity.slurm",
+      "tool": "bash -n"
+    },
+    {
+      "status": "passed",
+      "file": "08_local_tables/v1_template/build_cuttag_macs2_stats.mjs",
+      "tool": "node --check"
+    },
+    {
+      "status": "passed",
+      "file": "08_local_tables/v1_filled/fill_workbook1_cuttag.mjs",
+      "tool": "node --check"
+    },
+    {
+      "status": "passed",
+      "file": "08_local_tables/v1_filled/inspect_workbook1_sheet3.mjs",
+      "tool": "node --check"
+    },
+    {
+      "status": "passed",
+      "file": "08_local_tables/v1_fragment_draft/update_fragment_igg.mjs",
+      "tool": "node --check"
+    },
+    {
+      "status": "passed",
+      "file": "08_local_tables/v2/update_cuttag_v2_workbook.mjs",
+      "tool": "node --check"
+    },
+    {
+      "status": "passed",
+      "file": "08_local_tables/inspection/inspect_reference.mjs",
+      "tool": "node --check"
+    },
+    {
+      "status": "passed",
+      "file": "08_local_tables/inspection/artifact/inspect_reference.mjs",
+      "tool": "node --check"
+    },
+    {
+      "status": "passed",
+      "file": "09_local_reports/20261013_v1/build_report.mjs",
+      "tool": "node --check"
+    },
+    {
+      "status": "passed",
+      "file": "09_local_reports/20261013_v2_focus/prepare_data.mjs",
+      "tool": "node --check"
+    },
+    {
+      "status": "passed",
+      "file": "09_local_reports/20261013_v2_focus/inspect_source.mjs",
+      "tool": "node --check"
+    },
+    {
+      "status": "passed",
+      "file": "09_local_reports/20261013_v2_focus/build_focus.mjs",
+      "tool": "node --check"
+    }
+  ],
+  "python_regression_tests": "not rerun during packaging; original test sources are included",
+  "nextflow_compile": "not run; cluster Nextflow and Conda cache are external dependencies",
+  "server_execution": "not performed",
+  "zip_integrity_report": "../CUTTag_code_versions_20261014.zip.validation.json"
+}

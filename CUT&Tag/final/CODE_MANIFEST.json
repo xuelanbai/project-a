@@ -1,0 +1,96 @@
+{
+  "files": [
+    {
+      "purpose": "离线环境预热/检查",
+      "source_archive": "versions/20261014/00_environment/prewarm_cutandtag_envs.nf",
+      "path": "server/offline/prewarm_cutandtag_envs.nf",
+      "original_source": "prewarm_cutandtag_envs.nf",
+      "copied_sha256": "6ee44638afa6796582156a8b88ce2ffa0ac483aadeec5edf597e878c8164e91f",
+      "source_sha256": "6ee44638afa6796582156a8b88ce2ffa0ac483aadeec5edf597e878c8164e91f",
+      "original_bytes_preserved": true
+    },
+    {
+      "purpose": "猪参考 v2 nf-core driver",
+      "source_archive": "versions/20261014/02_v2_main/run_cutandrun_pig_v2.slurm",
+      "path": "server/config/run_cutandrun_pig_v2.slurm",
+      "original_source": "outputs/run_cutandrun_pig_v2.slurm",
+      "copied_sha256": "c597a96c01eb0a0853d614597676108473ea9aeb197ff87758456ed44a6c6706",
+      "source_sha256": "c597a96c01eb0a0853d614597676108473ea9aeb197ff87758456ed44a6c6706",
+      "original_bytes_preserved": true
+    },
+    {
+      "purpose": "四条 pooled ppois 与两 caller 共同峰",
+      "source_archive": "versions/20261014/02_v2_main/postprocess_cutandtag_pig_v2.slurm",
+      "path": "server/config/postprocess_cutandtag_pig_v2.slurm",
+      "original_source": "outputs/postprocess_cutandtag_pig_v2.slurm",
+      "copied_sha256": "35666edfd6ba4bbaac8622286494b717378c35ab87bad2bb657bf738eecfcf0e",
+      "source_sha256": "35666edfd6ba4bbaac8622286494b717378c35ab87bad2bb657bf738eecfcf0e",
+      "original_bytes_preserved": true
+    },
+    {
+      "purpose": "全基因 TSS coverage profiles",
+      "source_archive": "versions/20261014/02_v2_main/run_cuttag_tss_v2.slurm",
+      "path": "server/config/run_cuttag_tss_v2.slurm",
+      "original_source": "outputs/run_cuttag_tss_v2.slurm",
+      "copied_sha256": "af9329989c39178f74ee1ed0f0bab642cde2dd36fba3de30e71a597b944db3ac",
+      "source_sha256": "af9329989c39178f74ee1ed0f0bab642cde2dd36fba3de30e71a597b944db3ac",
+      "original_bytes_preserved": true
+    },
+    {
+      "purpose": "收集 v2 统计至 JSON.GZ",
+      "source_archive": "versions/20261014/02_v2_main/collect_cuttag_v2_stats.slurm",
+      "path": "server/config/collect_cuttag_v2_stats.slurm",
+      "original_source": "outputs/collect_cuttag_v2_stats.slurm",
+      "copied_sha256": "0096db4fbaeb8ca7e3d744b08a6d262421b2ef7f6b1e9698fe914e784796b0c9",
+      "source_sha256": "0096db4fbaeb8ca7e3d744b08a6d262421b2ef7f6b1e9698fe914e784796b0c9",
+      "original_bytes_preserved": true
+    },
+    {
+      "purpose": "统计收集器既有测试",
+      "source_archive": "versions/20261014/02_v2_main/test_collect_cuttag_v2_stats.py",
+      "path": "server/config/test_collect_cuttag_v2_stats.py",
+      "original_source": "outputs/test_collect_cuttag_v2_stats.py",
+      "copied_sha256": "9c8b7f3861fe57bd904e8cfbf085e77d73e0540b7d8cf6102d8736315c8d1f0c",
+      "source_sha256": "9c8b7f3861fe57bd904e8cfbf085e77d73e0540b7d8cf6102d8736315c8d1f0c",
+      "original_bytes_preserved": true
+    },
+    {
+      "purpose": "严格峰注释和共占位筛查",
+      "source_archive": "versions/20261014/03_v2_hypothesis_screen/screen_cuttag_interaction_hypotheses.slurm",
+      "path": "server/config/screen_cuttag_interaction_hypotheses.slurm",
+      "original_source": "outputs/screen_cuttag_interaction_hypotheses.slurm",
+      "copied_sha256": "01cc903948e8e51ecc462c647001676954345f2bddf9a3c7e1b1ebc8917f979e",
+      "source_sha256": "01cc903948e8e51ecc462c647001676954345f2bddf9a3c7e1b1ebc8917f979e",
+      "original_bytes_preserved": true
+    },
+    {
+      "purpose": "原始 interval 积分与匹配比较",
+      "source_archive": "versions/20261014/05_signal_v2_exact/quantify_cuttag_signal_qc_v2.py",
+      "path": "server/config/quantify_cuttag_signal_qc_v2.py",
+      "original_source": "outputs/quantify_cuttag_signal_qc_v2.py",
+      "copied_sha256": "1f8ef5f384abbe599aa0da63ebe255957da7d856c8d0fe5ce166a66e93e98914",
+      "source_sha256": "1f8ef5f384abbe599aa0da63ebe255957da7d856c8d0fe5ce166a66e93e98914",
+      "original_bytes_preserved": true
+    },
+    {
+      "purpose": "精确定量 v2 Slurm wrapper",
+      "source_archive": "versions/20261014/05_signal_v2_exact/quantify_cuttag_signal_qc_v2.slurm",
+      "path": "server/config/quantify_cuttag_signal_qc_v2.slurm",
+      "original_source": "outputs/quantify_cuttag_signal_qc_v2.slurm",
+      "copied_sha256": "487e89e229edd966390f326e35b19658f50e44cf23d959a474d1049006c52141",
+      "source_sha256": "487e89e229edd966390f326e35b19658f50e44cf23d959a474d1049006c52141",
+      "original_bytes_preserved": true
+    },
+    {
+      "purpose": "精确定量既有回归测试",
+      "source_archive": "versions/20261014/05_signal_v2_exact/test_quantify_cuttag_signal_qc_v2.py",
+      "path": "server/config/test_quantify_cuttag_signal_qc_v2.py",
+      "original_source": "outputs/test_quantify_cuttag_signal_qc_v2.py",
+      "copied_sha256": "058cce45a5f0798b42fdf9d6ac68b231caffc51bf06529f70fd94fe60d8f3fdb",
+      "source_sha256": "058cce45a5f0798b42fdf9d6ac68b231caffc51bf06529f70fd94fe60d8f3fdb",
+      "original_bytes_preserved": true
+    }
+  ],
+  "version": "v2-main-exact-qc-20261016",
+  "checks": "every code file copied byte-for-byte from the archived original"
+}

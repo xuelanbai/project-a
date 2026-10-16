@@ -1,0 +1,15 @@
+{
+  "repository_directory": "CUT&Tag",
+  "analysis_algorithms_or_parameters_modified": false,
+  "date": "2026-10-16",
+  "archive_and_final_copy_sha256": "passed",
+  "final_total_files": 14,
+  "original_workspace_files_moved_or_modified": false,
+  "final_code_files": 10,
+  "archived_files": 343,
+  "final_version": "v2-main-exact-qc-20261016",
+  "upload_scope": "code, source snapshots, documentation, provenance; no sequencing or experimental result data",
+  "separate_local_final_copy": "CUTTag_final_v2_20261016",
+  "private_repository": true,
+  "repository": "xuelanbai/project-a"
+}

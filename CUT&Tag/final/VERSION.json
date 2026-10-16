@@ -1,0 +1,13 @@
+{
+  "code_file_count": 10,
+  "project_main_analysis": "pig_v2_MACS2_narrow_q01_matched_IgG_2of2",
+  "freeze_date": "2026-10-16",
+  "computational_changes_in_this_freeze": false,
+  "source_archive": "CUTTag_code_versions_20261014",
+  "status": "existing_main_analysis_code_freeze",
+  "server_rerun_performed": false,
+  "signal_quantification": "exact_bigWig_interval_v2",
+  "external_server_configuration_required": true,
+  "version": "v2-main-exact-qc-20261016",
+  "pipeline": "nf-core/cutandrun 3.2.2"
+}

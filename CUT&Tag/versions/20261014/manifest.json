@@ -1,0 +1,3278 @@
+{
+  "package": "CUTTag_code_versions_20261014",
+  "archive_date": "2026-10-14",
+  "timezone": "Asia/Shanghai",
+  "source_workspace": "C:\\Users\\Luca\\Documents\\Codex\\2026-09-17\\cut-tag",
+  "policy": "Copies preserve source bytes; existing analysis files are not moved, deleted, renamed, or edited.",
+  "custom_analysis_and_local_scripts": 31,
+  "packaging_tools": 1,
+  "upstream_snapshot_files": 290,
+  "aliases": [
+    {
+      "source": "outputs/cuttag_signal_qc_v2_20261009/quantify_cuttag_signal_qc_v2.py",
+      "sha256_matches": true,
+      "same_as": "outputs/quantify_cuttag_signal_qc_v2.py"
+    },
+    {
+      "source": "outputs/cuttag_signal_qc_v2_20261009/quantify_cuttag_signal_qc_v2.slurm",
+      "sha256_matches": true,
+      "same_as": "outputs/quantify_cuttag_signal_qc_v2.slurm"
+    },
+    {
+      "source": "outputs/cuttag_signal_qc_v2_20261009/CUTTag背景核查与敏感性分析说明.md",
+      "sha256_matches": true,
+      "same_as": "outputs/CUTTag背景核查与敏感性分析说明.md"
+    }
+  ],
+  "files": [
+    {
+      "source": "prewarm_cutandtag_envs.nf",
+      "archived": "00_environment/prewarm_cutandtag_envs.nf",
+      "purpose": "离线环境预热/检查",
+      "status": "历史修正后版本",
+      "bytes": 4730,
+      "sha256": "6ee44638afa6796582156a8b88ce2ffa0ac483aadeec5edf597e878c8164e91f",
+      "newline_style": "LF",
+      "copy_matches_source": true
+    },
+    {
+      "source": "outputs/macs2_igg_pval_tracks.slurm",
+      "archived": "01_v1_legacy/macs2_igg_pval_tracks.slurm",
+      "purpose": "旧结果单重复+pooled ppois 轨道",
+      "status": "历史；成功全程未确认",
+      "bytes": 5739,
+      "sha256": "03cdfce136858491e0412d2cb88f08d47294562b4ebad8f3e3c06543228fe3d7",
+      "newline_style": "LF",
+      "copy_matches_source": true
+    },
+    {
+      "source": "outputs/run_cutandrun_pig_v2.slurm",
+      "archived": "02_v2_main/run_cutandrun_pig_v2.slurm",
+      "purpose": "猪参考 v2 nf-core driver",
+      "status": "44536 成功",
+      "bytes": 3859,
+      "sha256": "c597a96c01eb0a0853d614597676108473ea9aeb197ff87758456ed44a6c6706",
+      "newline_style": "LF",
+      "copy_matches_source": true
+    },
+    {
+      "source": "outputs/postprocess_cutandtag_pig_v2.slurm",
+      "archived": "02_v2_main/postprocess_cutandtag_pig_v2.slurm",
+      "purpose": "四条 pooled ppois 与两 caller 共同峰",
+      "status": "44538 对应后处理",
+      "bytes": 7963,
+      "sha256": "35666edfd6ba4bbaac8622286494b717378c35ab87bad2bb657bf738eecfcf0e",
+      "newline_style": "LF",
+      "copy_matches_source": true
+    },
+    {
+      "source": "outputs/run_cuttag_tss_v2.slurm",
+      "archived": "02_v2_main/run_cuttag_tss_v2.slurm",
+      "purpose": "全基因 TSS coverage profiles",
+      "status": "脚本存在；完成状态待日志核对",
+      "bytes": 5701,
+      "sha256": "af9329989c39178f74ee1ed0f0bab642cde2dd36fba3de30e71a597b944db3ac",
+      "newline_style": "LF",
+      "copy_matches_source": true
+    },
+    {
+      "source": "outputs/collect_cuttag_v2_stats.slurm",
+      "archived": "02_v2_main/collect_cuttag_v2_stats.slurm",
+      "purpose": "收集 v2 统计至 JSON.GZ",
+      "status": "44539 对应任务",
+      "bytes": 12013,
+      "sha256": "0096db4fbaeb8ca7e3d744b08a6d262421b2ef7f6b1e9698fe914e784796b0c9",
+      "newline_style": "LF",
+      "copy_matches_source": true
+    },
+    {
+      "source": "outputs/test_collect_cuttag_v2_stats.py",
+      "archived": "02_v2_main/test_collect_cuttag_v2_stats.py",
+      "purpose": "统计收集器既有测试",
+      "status": "与 Slurm 同目录",
+      "bytes": 2928,
+      "sha256": "9c8b7f3861fe57bd904e8cfbf085e77d73e0540b7d8cf6102d8736315c8d1f0c",
+      "newline_style": "LF",
+      "copy_matches_source": true
+    },
+    {
+      "source": "outputs/screen_cuttag_interaction_hypotheses.slurm",
+      "archived": "03_v2_hypothesis_screen/screen_cuttag_interaction_hypotheses.slurm",
+      "purpose": "严格峰注释和共占位筛查",
+      "status": "已有结果包",
+      "bytes": 9730,
+      "sha256": "01cc903948e8e51ecc462c647001676954345f2bddf9a3c7e1b1ebc8917f979e",
+      "newline_style": "LF",
+      "copy_matches_source": true
+    },
+    {
+      "source": "outputs/quantify_cuttag_hypothesis_signals.slurm",
+      "archived": "04_signal_v1_legacy/quantify_cuttag_hypothesis_signals.slurm",
+      "purpose": "初版 multiBigwigSummary 区域定量",
+      "status": "被精确定量 v2 替代",
+      "bytes": 5553,
+      "sha256": "13fefd7d7507143b191c0eb4a724a511720f47209dba7b6b71978c7d0937657f",
+      "newline_style": "LF",
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/audit_hypothesis_signal_quantification.py",
+      "archived": "04_signal_v1_legacy/local_audit/audit_hypothesis_signal_quantification.py",
+      "purpose": "本地区域信号结果审计",
+      "status": "相对路径依赖原工作区",
+      "bytes": 13103,
+      "sha256": "2b6dc72c1ec9c8a7e74f04a042bf275f162bc06340b57d38ee8bb357258e14b0",
+      "newline_style": "LF",
+      "copy_matches_source": true
+    },
+    {
+      "source": "outputs/quantify_cuttag_signal_qc_v2.py",
+      "archived": "05_signal_v2_exact/quantify_cuttag_signal_qc_v2.py",
+      "purpose": "原始 interval 积分与匹配比较",
+      "status": "51892 对应代码",
+      "bytes": 23631,
+      "sha256": "1f8ef5f384abbe599aa0da63ebe255957da7d856c8d0fe5ce166a66e93e98914",
+      "newline_style": "LF",
+      "copy_matches_source": true
+    },
+    {
+      "source": "outputs/quantify_cuttag_signal_qc_v2.slurm",
+      "archived": "05_signal_v2_exact/quantify_cuttag_signal_qc_v2.slurm",
+      "purpose": "精确定量 v2 Slurm wrapper",
+      "status": "51892 对应代码",
+      "bytes": 2024,
+      "sha256": "487e89e229edd966390f326e35b19658f50e44cf23d959a474d1049006c52141",
+      "newline_style": "LF",
+      "copy_matches_source": true
+    },
+    {
+      "source": "outputs/test_quantify_cuttag_signal_qc_v2.py",
+      "archived": "05_signal_v2_exact/test_quantify_cuttag_signal_qc_v2.py",
+      "purpose": "精确定量既有回归测试",
+      "status": "与 helper 同目录",
+      "bytes": 6849,
+      "sha256": "058cce45a5f0798b42fdf9d6ac68b231caffc51bf06529f70fd94fe60d8f3fdb",
+      "newline_style": "LF",
+      "copy_matches_source": true
+    },
+    {
+      "source": "outputs/cuttag_macs2_q05_sensitivity.slurm",
+      "archived": "06_sensitivity_q05/cuttag_macs2_q05_sensitivity.slurm",
+      "purpose": "Tag narrow q0.05 与严格集合对照",
+      "status": "51897 成功",
+      "bytes": 6727,
+      "sha256": "1dc08e058d3cdb912e6a26c275934d04069cb6a04572b09226a93c73302b383c",
+      "newline_style": "LF",
+      "copy_matches_source": true
+    },
+    {
+      "source": "outputs/cuttag_macs2_broad_nolambda_sensitivity.slurm",
+      "archived": "07_sensitivity_broad_nolambda/cuttag_macs2_broad_nolambda_sensitivity.slurm",
+      "purpose": "broad/nolambda 两模式独立分析",
+      "status": "nolambda 52126 成功；broad 未核验",
+      "bytes": 10018,
+      "sha256": "4625690aa9740d01ffa76aa5ceccc007d96756eaa6462d01bc630faf0d0387bf",
+      "newline_style": "LF",
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/build_cuttag_macs2_stats.mjs",
+      "archived": "08_local_tables/v1_template/build_cuttag_macs2_stats.mjs",
+      "purpose": "MACS2 项目统计模板生成",
+      "status": "本地历史模板",
+      "bytes": 15110,
+      "sha256": "e162ba8e910976e9ea279e1267129567ca974fce77aa10cc168e55151dc60703",
+      "newline_style": "LF",
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/fill_workbook1_cuttag.mjs",
+      "archived": "08_local_tables/v1_filled/fill_workbook1_cuttag.mjs",
+      "purpose": "原 Sheet3 填统计",
+      "status": "本地已填表对应版本",
+      "bytes": 11668,
+      "sha256": "9ac38938972eb7f3f543eaeb30f17d8b217415eb1da5415aa0d58509d273572a",
+      "newline_style": "LF",
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/parse_cuttag_inputs.py",
+      "archived": "08_local_tables/v1_filled/parse_cuttag_inputs.py",
+      "purpose": "解析旧统计输入文本",
+      "status": "本地辅助",
+      "bytes": 3833,
+      "sha256": "33b6065fc8112cf876defb55ab631ea2fc268bf784605ead35a53423ac48894c",
+      "newline_style": "LF",
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/inspect_multimqc_blocks.py",
+      "archived": "08_local_tables/v1_filled/inspect_multimqc_blocks.py",
+      "purpose": "检查 MultiQC 统计字段",
+      "status": "本地辅助",
+      "bytes": 791,
+      "sha256": "55bb030c6515e319f91f0743649e12c66f2d7a30ca02b0cff79d5092a6f49f99",
+      "newline_style": "LF",
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/inspect_current_workbook.py",
+      "archived": "08_local_tables/v1_filled/inspect_current_workbook.py",
+      "purpose": "检查工作簿及数值",
+      "status": "本地辅助",
+      "bytes": 903,
+      "sha256": "5db3cba599539337b1bb001386d855eaa80b85d9830e8ced34389baa76b7da81",
+      "newline_style": "LF",
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/inspect_workbook1_sheet3.mjs",
+      "archived": "08_local_tables/v1_filled/inspect_workbook1_sheet3.mjs",
+      "purpose": "Sheet3 片段/IgG 列预览",
+      "status": "本地辅助",
+      "bytes": 1522,
+      "sha256": "735ac3d6fe6217c3acdb0d0554a7c0e73e8a27af8eef57b7af8a87f4646fa6d0",
+      "newline_style": "LF",
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/update_fragment_igg.mjs",
+      "archived": "08_local_tables/v1_fragment_draft/update_fragment_igg.mjs",
+      "purpose": "tmp 与预置值的片段/IgG 填表草稿",
+      "status": "历史草稿；用 preserve 版溯源正式填表",
+      "bytes": 3730,
+      "sha256": "12b023c00f5d5d16170586cef78ecef239cf6a6034711d2ec4d2b32a4cc94f17",
+      "newline_style": "LF",
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/update_fragment_igg_preserve.py",
+      "archived": "08_local_tables/v1_fragment_preserve/update_fragment_igg_preserve.py",
+      "purpose": "完成 TSV 的片段均值/IgG 命名，保留缓存",
+      "status": "后续修订",
+      "bytes": 5810,
+      "sha256": "83bf6b9b674daa87f58204ea67e795d46cba65ab085df042c5a236e4552f96ab",
+      "newline_style": "LF",
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/check_fragment_igg_workbook.py",
+      "archived": "08_local_tables/v1_fragment_preserve/check_fragment_igg_workbook.py",
+      "purpose": "核对片段/IgG 填表前后",
+      "status": "本地辅助",
+      "bytes": 4160,
+      "sha256": "22e4a2158ad7a5a0def0c0e6dfa6c316aed6d4052deb791735609aeb9a83d46b",
+      "newline_style": "LF",
+      "copy_matches_source": true
+    },
+    {
+      "source": "outputs/update_cuttag_v2_workbook.mjs",
+      "archived": "08_local_tables/v2/update_cuttag_v2_workbook.mjs",
+      "purpose": "v2 参数说明、--fill-v2 新统计",
+      "status": "依赖历史 JSON.GZ 与工作簿",
+      "bytes": 33910,
+      "sha256": "121a817d3b7c6fba972302209fa412550d53b9ff408eabe7eaeaa45ef24fbde2",
+      "newline_style": "LF",
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/inspect_reference.mjs",
+      "archived": "08_local_tables/inspection/inspect_reference.mjs",
+      "purpose": "早期参考工作簿查看",
+      "status": "历史辅助；只保存代码",
+      "bytes": 1906,
+      "sha256": "a809079b032a69b994723789dabc4ee0a128c765597124998af063e76fc55941",
+      "newline_style": "LF",
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/artifact/inspect_reference.mjs",
+      "archived": "08_local_tables/inspection/artifact/inspect_reference.mjs",
+      "purpose": "早期 artifact 参考工作簿查看",
+      "status": "另一个内容不同的原版本",
+      "bytes": 921,
+      "sha256": "32cec509a7fd1d4231e2e8c3fe5503aacaeb7aa9646552cfb601381890a25726",
+      "newline_style": "LF",
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/ppt_report_20261013/build_report.mjs",
+      "archived": "09_local_reports/20261013_v1/build_report.mjs",
+      "purpose": "简洁汇报 PPT 生成",
+      "status": "本地报告版本",
+      "bytes": 24037,
+      "sha256": "3ee7d6cfa47276fc98edb2d0617a580c11cdbcdb319e964f8ac0a7e533bab288",
+      "newline_style": "LF",
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/ppt_focus_20261013/prepare_data.mjs",
+      "archived": "09_local_reports/20261013_v2_focus/prepare_data.mjs",
+      "purpose": "重点报告数据准备",
+      "status": "本地报告版本",
+      "bytes": 3177,
+      "sha256": "0955f222c362cb62fcee9a7e10c1e083ec64108627fb122aa93e32120bd0b574",
+      "newline_style": "LF",
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/ppt_focus_20261013/inspect_source.mjs",
+      "archived": "09_local_reports/20261013_v2_focus/inspect_source.mjs",
+      "purpose": "模板/旧汇报检查",
+      "status": "本地报告版本",
+      "bytes": 1406,
+      "sha256": "31651ee62b12c26e72c4d83732f5cae0fd60d10bb2e3852ba3e07e341a429d1a",
+      "newline_style": "LF",
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/ppt_focus_20261013/build_focus.mjs",
+      "archived": "09_local_reports/20261013_v2_focus/build_focus.mjs",
+      "purpose": "模板版区域/基因报告生成",
+      "status": "本地报告版本",
+      "bytes": 20397,
+      "sha256": "116e76edefcf7cc4e788c88b8044023c42441958376d5bbd991995fac7713bf1",
+      "newline_style": "LF",
+      "copy_matches_source": true
+    },
+    {
+      "source": "outputs/CUTTag背景核查与敏感性分析说明.md",
+      "archived": "05_signal_v2_exact/历史方法说明.md",
+      "purpose": "保留当时信号 QC 与敏感性说明",
+      "status": "历史状态文字以总版本表更新",
+      "bytes": 6564,
+      "sha256": "def23dd3e28fbba5a2fb2c2a1cd2ee278eb6a1558a7afc2c4184fd994da05deb",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "outputs/hypothesis_signal_audit_20261009/结果解读与定量修正说明.md",
+      "archived": "04_signal_v1_legacy/local_audit/历史审计说明.md",
+      "purpose": "初版定量修正记录",
+      "status": "历史方法记录",
+      "bytes": 5966,
+      "sha256": "7130204de0acd5ddf5dcf03f82346cc003e3bba2d30fa6a75ebcf390485ffd0f",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/.ecrc",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/.ecrc",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 103,
+      "sha256": "d3fec3f7f28479c244481a5fc71e4cb0694a7807b78d32fb8bd2c9f506d2338c",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/.editorconfig",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/.editorconfig",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 560,
+      "sha256": "545d4843d42f42bd07e6e9dc13781b369214cb241ad506b3fb54131494b5f2c1",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/.gitattributes",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/.gitattributes",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 154,
+      "sha256": "c789806a02f29774b9f8ee7a9ac019ed28cdce9d80a9284726b46c1a24e2c211",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/.gitignore",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/.gitignore",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 137,
+      "sha256": "b539f76eae78ec5fffd82398eb0c516ee020a92f0d1a1be707ae55cf674f577c",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/.gitpod.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/.gitpod.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1134,
+      "sha256": "937851fd7f916a48eb08f0dc4f57da00173d8d691ddc938919f1094def1cc0e2",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/.nf-core.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/.nf-core.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 117,
+      "sha256": "10bf62a3621fdf2621c61654eeaa232f81dd724e3b2c6589f2f7dc8e9eae8c11",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/.pre-commit-config.yaml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/.pre-commit-config.yaml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 271,
+      "sha256": "521013b746f6d5c1924d67657ef03d1894acc2945812dab5063bcb399d66ab78",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/.prettierignore",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/.prettierignore",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 126,
+      "sha256": "519712819ce98a9202da882fb2a9cccc65176dd1705ee94db1c034f066949b38",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/.prettierrc.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/.prettierrc.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 16,
+      "sha256": "bc60ee517149a3320be8d23ee19607ab6bdf497e3b73d02a46cb8ab011b26916",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/CHANGELOG.md",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/CHANGELOG.md",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 21946,
+      "sha256": "f032bd516e658c2833d39a256386b8f3c4404b1a7baf84400d0f458454d99293",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/CITATIONS.md",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/CITATIONS.md",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 4070,
+      "sha256": "a7adcd4313f892a9ac65b42ab251a33c9b996631dbb2a8333085716848f2ae74",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/CODE_OF_CONDUCT.md",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/CODE_OF_CONDUCT.md",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 13562,
+      "sha256": "b474915a37b8510c1a640e27fa57404e6b2f02a611ede77466b4bce34324f7a6",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/LICENSE",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/LICENSE",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1102,
+      "sha256": "99e24a3a76d9d0c964d73fef3070e7a9f8f1557c1c06511ecab9a8b41a3e840e",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/main.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/main.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 3317,
+      "sha256": "da9842d2c1c826a786edc0e10fc9f06e7294c6aea9226b7cc942f3e01a9fa917",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules.json",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules.json",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 8659,
+      "sha256": "6be4b90dfde4bec90bd10d58f25837cb8ad80810f0288aecf1594cf0ac7d0c8d",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/nextflow_schema.json",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/nextflow_schema.json",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 37178,
+      "sha256": "3fcd1deec9eaada1e93ca34a99509f69000b1805604ce6ae50caa1a24268eeef",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/nextflow.config",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/nextflow.config",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 15374,
+      "sha256": "10f4fc11b99a4e0e0a839396d7ff95545204435e404585ebf2aaf445d4dfd25d",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/pyproject.toml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/pyproject.toml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 425,
+      "sha256": "202de0a1f363b607799ab94d33366a16b4c2cca27927a3bff208e1921d4df9f0",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/README.md",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/README.md",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 10136,
+      "sha256": "327177d4797cf0c7637d50f5b96fd36a3e1d9157fc54ab27901a62cf82895538",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/tower.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/tower.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 165,
+      "sha256": "3c323f82ccd98f79afc9a837018344cb9cf9f3f83b7bb7bd321eb0a831e7f6ac",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/.devcontainer/devcontainer.json",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/.devcontainer/devcontainer.json",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1231,
+      "sha256": "740548d6358c65136774e0717bd41894c2cbe973b63698eb886e0d6ae76e4e26",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/.github/.dockstore.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/.github/.dockstore.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 153,
+      "sha256": "e3ed84c1c2cdc7923e42b11bdc659c0b1e348324146d01830e564da8ce5f717a",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/.github/CONTRIBUTING.md",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/.github/CONTRIBUTING.md",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 7403,
+      "sha256": "94be839f6623764b3858de0684b03c67265383d774202429044897e27b1829f4",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/.github/PULL_REQUEST_TEMPLATE.md",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/.github/PULL_REQUEST_TEMPLATE.md",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1459,
+      "sha256": "8d3dc75a7f6df22193698180775df7f37119a5d7d1b3d6b83e0e16fc8c0d462f",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/.github/ISSUE_TEMPLATE/bug_report.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/.github/ISSUE_TEMPLATE/bug_report.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1810,
+      "sha256": "49d6a1c36ee095b618e3f0e3c31518313b247dfa4c4299e00973d8de300b135f",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/.github/ISSUE_TEMPLATE/config.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/.github/ISSUE_TEMPLATE/config.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 268,
+      "sha256": "d0c7b80abfda8ff89cc6bea630a8f79aed3674fe7d0e1596022b79ce8abb000d",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/.github/ISSUE_TEMPLATE/feature_request.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/.github/ISSUE_TEMPLATE/feature_request.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 408,
+      "sha256": "e1e128f93fa3d04a6a9d0a716049f93f9e4742b402bbe9c83b31929c96c016fd",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/.github/workflows/awsfulltest.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/.github/workflows/awsfulltest.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1250,
+      "sha256": "f02adf4942eccadcbbc8ec1a986446b74b6843e2fb65e27199c69e6416b480b3",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/.github/workflows/awstest.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/.github/workflows/awstest.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1121,
+      "sha256": "d9d66b737ee0f80398b200c9d9bfd2774215e441e24c3524d1d422d5ce5be49d",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/.github/workflows/branch.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/.github/workflows/branch.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 2251,
+      "sha256": "6d05d66084e7e74f34632bc43c8ef4dc66f581a88f59e5f89791decabf59f406",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/.github/workflows/ci.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/.github/workflows/ci.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 11120,
+      "sha256": "b71344082651e9ccdb1df9c42baa80a5054442207a04d5f906dace63728b87f0",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/.github/workflows/clean-up.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/.github/workflows/clean-up.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1133,
+      "sha256": "f26cdc1fdb9ded88700c89eb5cc972ef36e23490d3a28d84982c04631a052e58",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/.github/workflows/download_pipeline.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/.github/workflows/download_pipeline.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 2164,
+      "sha256": "464293f9ee64571f8247ccb212046fadeb634aaac136006b8e6c44d7aba29e5d",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/.github/workflows/fix-linting.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/.github/workflows/fix-linting.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 3431,
+      "sha256": "ff767f9f756f2a6222a96b2884ac4cb14a7b15d708dc859a9bd08dbc5ddc6204",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/.github/workflows/linting_comment.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/.github/workflows/linting_comment.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 848,
+      "sha256": "102e0716393e5a986316e63de3baaa01355a21eb985a1f09951decae2b0ec654",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/.github/workflows/linting.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/.github/workflows/linting.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1823,
+      "sha256": "657741e84b50dcdfce0581a0e539eab1d6f484b631a269503fc003f9e35743b6",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/.github/workflows/release-announcements.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/.github/workflows/release-announcements.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 2479,
+      "sha256": "0572463cdfeee8137f325bc0144d530b01e229a3dbc8ddbfb7e814e02789e427",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/assets/adaptivecard.json",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/assets/adaptivecard.json",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 2701,
+      "sha256": "66fed0eeb1db59632bd88b81e2701bb3b38dde99cbf86f1a20fc6058e01d14f1",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/assets/dummy_file.txt",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/assets/dummy_file.txt",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/assets/email_template.html",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/assets/email_template.html",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 2632,
+      "sha256": "69c2dac9053eefc5c7d585e23dbf7649e9d62ad9f58bd406978c4b8f985e5eba",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/assets/email_template.txt",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/assets/email_template.txt",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1142,
+      "sha256": "43e9ff692cd926c5894b5536f7f8cbe5af26090a7b57ab4e983858e8ee5d9aa5",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/assets/methods_description_template.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/assets/methods_description_template.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 3275,
+      "sha256": "0d086339c33d96a1fa30565804b5291d4d426100e44d1ed5174a68fd5cf5ae0f",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/assets/multiqc_config.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/assets/multiqc_config.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 3526,
+      "sha256": "f0229b18d6238783b36f0ea94784355fbb800bffd688c7a9787ff99e54d05c09",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/assets/nf-core-cutandrun_logo_light.png",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/assets/nf-core-cutandrun_logo_light.png",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 73876,
+      "sha256": "b582a8c48f3b6b611fd08508bf2676fd82e719ad2e87c948bbd883a224a22705",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/assets/samplesheet.csv",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/assets/samplesheet.csv",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 440,
+      "sha256": "b1b5e9067885844fb0cfb287fb626f93afc590bfd6db88138a7d701006cedc68",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/assets/schema_input.json",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/assets/schema_input.json",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1630,
+      "sha256": "d660a5279bebc46cdfcf11912705684605abf2103f57773da6b0c1ddac5b6881",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/assets/sendmail_template.txt",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/assets/sendmail_template.txt",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1164,
+      "sha256": "a4d91c8864631aecc3ab464541f17b80b5fe4da6d7dc2be6e473159c1405eace",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/assets/slackreport.json",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/assets/slackreport.json",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1791,
+      "sha256": "09ee2762818bd685875581e3307e8489279dc215502d2f8b0ccd9ea43e52ca6f",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/assets/blacklists/GRCh37-blacklist.bed",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/assets/blacklists/GRCh37-blacklist.bed",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 9535,
+      "sha256": "223ef161f2b9cc9a0b7826ae28f6146c69607e4bd5baefaacf4c86a2a6cce334",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/assets/blacklists/GRCh38-blacklist.bed",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/assets/blacklists/GRCh38-blacklist.bed",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 26394,
+      "sha256": "89bd06cf49b450855039ff59b85ae30cc5cd29142623418f7deab075efbd6455",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/assets/blacklists/GRCm38-blacklist.bed",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/assets/blacklists/GRCm38-blacklist.bed",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 13161,
+      "sha256": "4cda57914a91535458e2ae83f6315b4fce36c474d6df1cd2227d400a60e66657",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/assets/blacklists/GRCm39-blacklist.bed",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/assets/blacklists/GRCm39-blacklist.bed",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 13313,
+      "sha256": "0de9e79f250fc755e133dba198ddc9fbd9573745600d4ea764d3fef0e54956ad",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/assets/blacklists/hg19-blacklist.bed",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/assets/blacklists/hg19-blacklist.bed",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 18786,
+      "sha256": "7894cae8b0b64d3599d3dcec199b9019e2bb8b35a9686fe44d6ac4348977bcde",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/assets/blacklists/hg38-blacklist.bed",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/assets/blacklists/hg38-blacklist.bed",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 26393,
+      "sha256": "5f2bdd37c5155e622dc59b0c1f04d5d121e73aed4af0a5e70dc9ec3125f68057",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/assets/blacklists/mm10-blacklist.bed",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/assets/blacklists/mm10-blacklist.bed",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 13162,
+      "sha256": "b7e78ea6d1edcdd671ee58bc07c97da12aef5d85818a6a88b6f263a5c2e704d3",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/assets/blacklists/mm39-blacklist.bed",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/assets/blacklists/mm39-blacklist.bed",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 13314,
+      "sha256": "74882e035c8333b7a3d8258c060ed1969d07e64f6c0fc39dc7d502ec26d776e6",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/assets/multiqc/frag_len_header.txt",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/assets/multiqc/frag_len_header.txt",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 263,
+      "sha256": "4cf3001986fae8e128cc86ad9b512d358adbc2094ce152e38b1312b9cc52c975",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/assets/multiqc/frip_score_header.txt",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/assets/multiqc/frip_score_header.txt",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 639,
+      "sha256": "11049a2921e500bfba1ad0c320e75d5391226904bc4397d4365570b2ac38d4c1",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/assets/multiqc/linear_duplication_header.txt",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/assets/multiqc/linear_duplication_header.txt",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 414,
+      "sha256": "cc57351b0501fe0e3077d6e7e458bd0881f951aefacf1d2eed3d59dff378298f",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/assets/multiqc/peak_counts_consensus_header.txt",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/assets/multiqc/peak_counts_consensus_header.txt",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 464,
+      "sha256": "5797d45ab29698a7295b6b24cc6bbe37fe459ae65977bc1fc1db2d048b0c8ec8",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/assets/multiqc/peak_counts_header.txt",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/assets/multiqc/peak_counts_header.txt",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 455,
+      "sha256": "6cfa20bc5505cbca39b08ebd03124a0780b53de5d8d6400fd1e9811c1a384145",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/assets/multiqc/peak_reprod_header.txt",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/assets/multiqc/peak_reprod_header.txt",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 464,
+      "sha256": "0e320731ddaa6813a8edf0b1f90403221a5c8f036f1fd73c6a708f96c69e267b",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/bin/bt2_report_to_csv.awk",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/bin/bt2_report_to_csv.awk",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1202,
+      "sha256": "388964f61f7293d78eec4f2bdfa0f172eab1ffa4d8fa799e829db0f16236c1c6",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/bin/calc_frag_hist.py",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/bin/calc_frag_hist.py",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 4989,
+      "sha256": "3bc86fcbe7e750c1c4fca7b7028472315e09f94c5d19aa239ea35e8b5b2d873b",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/bin/check_samplesheet.py",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/bin/check_samplesheet.py",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 12900,
+      "sha256": "56cd54f929f3f1228b71605025fbfbee158e4f1a7a318a8637026d698646a34d",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/bin/dt_frag_report_to_csv.awk",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/bin/dt_frag_report_to_csv.awk",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 761,
+      "sha256": "6dcd819025ef091660eba676ef199623d2e10d0137b54189692cfb9ddfa9631a",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/bin/find_unique_reads.py",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/bin/find_unique_reads.py",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 4234,
+      "sha256": "35099cb37bc0ead53e14eed61b240c58cf9026a0db4be2a99e9618ac0dd167c6",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/bin/gtf2bed",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/bin/gtf2bed",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 4386,
+      "sha256": "c98acd746f62e802d84e6b23388544d50ddca3ca5396c6d7440aaffe2e540d98",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/bin/igv_files_to_session.py",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/bin/igv_files_to_session.py",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 8595,
+      "sha256": "03dddbcbbaf9befc969ee22bcba3f819df58d13a3854259ec0e8966dc979deec",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/bin/markdown_to_html.py",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/bin/markdown_to_html.py",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 3900,
+      "sha256": "ec5eedd340417caf8781b0ca667457fe77e52de13632866ab66a4e13796ac730",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/bin/peak_reproducibility.py",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/bin/peak_reproducibility.py",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 4959,
+      "sha256": "eb26618a5e2ad1ff8cecff189c6846f6b5f4062f1e0ca51124e354f1c9dd5e85",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/bin/plot_consensus_peaks.py",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/bin/plot_consensus_peaks.py",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 4196,
+      "sha256": "552406f3e170f4149d92bbdb426e1202d88f3dead37d046044ea790dde78855b",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/bin/reports.py",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/bin/reports.py",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 3882,
+      "sha256": "ed750051eb34342ffedd13b6d84da926f1918523d1460261397f097482108cde",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/conf/base.config",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/conf/base.config",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 2648,
+      "sha256": "b7069c12a315cb1558ac924cf6a3acb30e7a7d257aa4720da59062da15677094",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/conf/flowswitch.config",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/conf/flowswitch.config",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 4026,
+      "sha256": "225e14bfc81b46694b7a88e0d588aeb15682f31460ae1feb17298d7c11ebce47",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/conf/igenomes.config",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/conf/igenomes.config",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 36914,
+      "sha256": "5848b9d8a1930b219af1ae642fcafed2732c88a64caa6c8af9c8f781452ac45c",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/conf/laptop.config",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/conf/laptop.config",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 251,
+      "sha256": "3fb92304a73819dcdf374e7a9050fd437ff231f5c0cdf9f29f45664cdd923ed6",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/conf/modules.config",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/conf/modules.config",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 40703,
+      "sha256": "d33d75bf6c860447169c9c11868f670e410dad81af89e7f6b279661084463795",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/conf/resources.config",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/conf/resources.config",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 3104,
+      "sha256": "bf823df5822dbc107f1ea6a521ba772a0ec4061b5fd0d28599e61897e3c2a6c3",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/conf/test_fasta_only.config",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/conf/test_fasta_only.config",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1001,
+      "sha256": "8f2b47b63501724551edd65eab50e51225a16986ebf0bb3ca9580e2de939159a",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/conf/test_full_multi.config",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/conf/test_full_multi.config",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 867,
+      "sha256": "93a246e1fc3a66366948b99eb39413a6bfdbcd45b7dd4c996828cf77f9873cb1",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/conf/test_full_small_local_zip.config",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/conf/test_full_small_local_zip.config",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1026,
+      "sha256": "05e5c010e7548e5a140b40207ba4b9dc5c80a0aa91efde97e4b9e5663784fb65",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/conf/test_full_small.config",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/conf/test_full_small.config",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1489,
+      "sha256": "35735cf03777c77156d3b0257bb4863732de594f5c285a2060d13e48a59e55f9",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/conf/test_full.config",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/conf/test_full.config",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 869,
+      "sha256": "1e84933e1946d16513bec6e7f205ea1d13c417fb78fa865c4fce3c4d3c510fc2",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/conf/test_linear_dedup.config",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/conf/test_linear_dedup.config",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1056,
+      "sha256": "a909ec7482b6b0a6918bfa7c892c4358ccc1f06589df6d13ee42f5afac753701",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/conf/test_local_zip.config",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/conf/test_local_zip.config",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1531,
+      "sha256": "c9f9986b874e041615a5d70e84fe433a4c28d9c69b6ff68ff40908051fc8cd04",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/conf/test_no_control.config",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/conf/test_no_control.config",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1884,
+      "sha256": "3f209b64cba82ce956bca58b001c606d1702c425100b01acf0835d64d44de6cf",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/conf/test_no_genome.config",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/conf/test_no_genome.config",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1008,
+      "sha256": "095727061b7641a85d7d433bafa80d8e1d5f84100d7b3bfa797ea28675115050",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/conf/test_tech_reps.config",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/conf/test_tech_reps.config",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1892,
+      "sha256": "8a235dbba838ed9d9e3a084210a1c4e2834408c405fc65294b42cafc18461c5e",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/conf/test.config",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/conf/test.config",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 2001,
+      "sha256": "dacab1bc7694d4240b7c445df9cab3be10b861a310f5809e404de2fa0f47ff51",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/dev/docker/master_local_module_image/Dockerfile",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/dev/docker/master_local_module_image/Dockerfile",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 175,
+      "sha256": "9f8598135cf9cc22cf3f39b784ea6b84e915a5cda9dc31adef9ce3001c4b27fb",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/dev/docker/master_local_module_image/environment.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/dev/docker/master_local_module_image/environment.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 333,
+      "sha256": "987bf2f7ee0e429db439599e1ceda7155076f8c63c065f5a3a4084f09c836c74",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/docs/output.md",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/docs/output.md",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 34607,
+      "sha256": "df7d3ce314ad391d85d35d14aace94dd68bdbc3049bf845c5fcf2633653615ba",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/docs/README.md",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/docs/README.md",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 514,
+      "sha256": "c4cc2ef528eee80e387d7111f68c11b9d8938623d0c19c0688f0d4af43c52cf7",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/docs/usage.md",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/docs/usage.md",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 22107,
+      "sha256": "0df034c4330b0b253bfe7584e1a76f6bf9cfd30651b8307d4fcc88f10f99e456",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/docs/images/crick_logo.png",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/docs/images/crick_logo.png",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 83024,
+      "sha256": "b53c5e0d9ef4344534ae2b908e60d1d1ca48cd6b243e6e1e01b4b2a94ef58c39",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/docs/images/cutandrun-flow-diagram-v3.0.png",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/docs/images/cutandrun-flow-diagram-v3.0.png",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 994777,
+      "sha256": "c0da816b2a6fa421b079ba480bc000a37e24742d84ed87d32a3cfd854348b12f",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/docs/images/nf-core-cutandrun_logo_dark.png",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/docs/images/nf-core-cutandrun_logo_dark.png",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 27712,
+      "sha256": "25880116871ce80371fbe0b3275ee69e878902ba4945ca50afa236180cbd907a",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/docs/images/nf-core-cutandrun_logo_light.png",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/docs/images/nf-core-cutandrun_logo_light.png",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 23801,
+      "sha256": "66ee64e4feab48850d789975a625b953c8b769f0f369ad7fb586cc78d28b66a5",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/docs/images/output/all_consensus_peaks.png",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/docs/images/output/all_consensus_peaks.png",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 45115,
+      "sha256": "bf915eb0e8157eac07661d672a1b9b083ab19a92bfe90282c3a9d847fb9f477e",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/docs/images/output/deeptools_correlation_plot.png",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/docs/images/output/deeptools_correlation_plot.png",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 93923,
+      "sha256": "27e054d700e710b723b9d6f130e98dafaa839280dfae94b5c665f707a2f68bb6",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/docs/images/output/deeptools_fingerprint_explan.png",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/docs/images/output/deeptools_fingerprint_explan.png",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 228349,
+      "sha256": "2fe96ed6548daeb51eabdf5883760982d680356ca9a4ffcdedd6440546122a27",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/docs/images/output/deeptools_fingerprint_plot.png",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/docs/images/output/deeptools_fingerprint_plot.png",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 104149,
+      "sha256": "4e6026c35ca34a88855bcbbad78ab7d22e9b9e36df5ab24dc7b275cbd3d80ad6",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/docs/images/output/deeptools_heatmap.png",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/docs/images/output/deeptools_heatmap.png",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 259746,
+      "sha256": "14f61c9f4593dcbb3f11e28bd15e083bfbe2a07ebe850933826f1d33f60c3f9e",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/docs/images/output/deeptools_pca_plot.png",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/docs/images/output/deeptools_pca_plot.png",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 60575,
+      "sha256": "78fc98cdb756d8ec822701a52550da2fdb00c5649cd688a7243da59fc3c5a032",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/docs/images/output/mqc_01_fastqc_sequence_counts.png",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/docs/images/output/mqc_01_fastqc_sequence_counts.png",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 77377,
+      "sha256": "8c68e29f58f900be60cbf30bf7bfe4f57b5f9e5b9df083779d9154c53bbef55f",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/docs/images/output/mqc_02_fastqc_per_base_sequence_quality.png",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/docs/images/output/mqc_02_fastqc_per_base_sequence_quality.png",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 61827,
+      "sha256": "f0005f1b839ce45ce2821d6f07b0f0e28817eacdf340cc43e19eac4f1f595a17",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/docs/images/output/mqc_03_fastqc_per_sequence_quality_scores.png",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/docs/images/output/mqc_03_fastqc_per_sequence_quality_scores.png",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 83327,
+      "sha256": "93259b606cf448ec75110843ce54de280ba1717e6c6bcb1ea634d04233356779",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/docs/images/output/mqc_04_fastqc_per_sequence_gc_content.png",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/docs/images/output/mqc_04_fastqc_per_sequence_gc_content.png",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 126686,
+      "sha256": "62bbf8df0c7933617a4eddd322abe41d5602b76401691d43245ac4fd6b8b26a0",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/docs/images/output/mqc_05_fastqc_per_sequence_gc_content.png",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/docs/images/output/mqc_05_fastqc_per_sequence_gc_content.png",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 194856,
+      "sha256": "cb0b02c13202fd9f4a8ebbd5c754460c6c90dd14d4f1c4f4c4028309742804f0",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/docs/images/output/mqc_06_fastqc_sequence_duplication_levels.png",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/docs/images/output/mqc_06_fastqc_sequence_duplication_levels.png",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 84409,
+      "sha256": "47f1297b7ba475ae55bf2700241dee465c3bd05489e0009dfe11612c272c5d4e",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/docs/images/output/mqc_07_fastqc_clear_overrep.png",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/docs/images/output/mqc_07_fastqc_clear_overrep.png",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 41932,
+      "sha256": "e420292cbf9c1bd4ecd3fb4e04af1a1e8fbfb7e8c30c114d07fcd4e9e434418d",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/docs/images/output/mqc_08_fastqc_adapter_content.png",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/docs/images/output/mqc_08_fastqc_adapter_content.png",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 146666,
+      "sha256": "705707d100f5a4cb41d4b322bfa657e2f6f2c6a0955f36a95fcdd3d8f1fc6554",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/docs/images/output/mqc_09_fastqc_clear_adapter.png",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/docs/images/output/mqc_09_fastqc_clear_adapter.png",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 21280,
+      "sha256": "efaaf4d4cee89b495e88b3e3bb6799eaef4f8a2acc20d27924f433b1414c1724",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/docs/images/output/mqc_10_fastqc_overrepresented_sequences.png",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/docs/images/output/mqc_10_fastqc_overrepresented_sequences.png",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 99577,
+      "sha256": "b3f4476737fd821c821f6f8b64ed8f4481452a27f5cca83c23d775bb01b73534",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/docs/images/output/mqc_11_fastqc_overrepresented_sequences.png",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/docs/images/output/mqc_11_fastqc_overrepresented_sequences.png",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 130190,
+      "sha256": "efa776329cf33d59551721b9a9d4a58e3b2ebf955786d891441b44103921e4f3",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/docs/images/output/mqc_12_fastqc_adapter_content.png",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/docs/images/output/mqc_12_fastqc_adapter_content.png",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 150759,
+      "sha256": "ad9887d59e86a305615d773e78b1e9ac6f50789c70a8830798841f31a04a48b9",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/docs/images/output/mqc_13_fastqc_overrepresented_sequences.png",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/docs/images/output/mqc_13_fastqc_overrepresented_sequences.png",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 129854,
+      "sha256": "54b65db1ae1adf1f575d58ef91832012ed5b199340e4be062df519f74099307e",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/docs/images/output/mqc_14_fastqc_cutadapt_trimmed.png",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/docs/images/output/mqc_14_fastqc_cutadapt_trimmed.png",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 86570,
+      "sha256": "9fadafbade381ad375a9348d9eb83b331f9b563d68216ca904201829502bb7f4",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/docs/images/output/mqc_15_bowtie2_pe.png",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/docs/images/output/mqc_15_bowtie2_pe.png",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 74663,
+      "sha256": "eaa0dd205e5d6142fcc589bb256d7adbb6b4a5d02403b7e0470298941f7a67b0",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/docs/images/output/mqc_16_spikein_bowtie2_pe_plot.png",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/docs/images/output/mqc_16_spikein_bowtie2_pe_plot.png",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 71971,
+      "sha256": "bdb09255c640b0acf0af1af0d1e575a4c95178bef580cbc7f2faefe7204616c2",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/docs/images/output/mqc_17_bowtie2_pe_plot.png",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/docs/images/output/mqc_17_bowtie2_pe_plot.png",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 112865,
+      "sha256": "1370dd61a9d02c76d97204961a0d9718e8e66cd75159a5d16287093f6e636ed1",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/docs/images/output/mqc_18_preseq_plot.png",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/docs/images/output/mqc_18_preseq_plot.png",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 131380,
+      "sha256": "8630ab997faa904b3c135141fdd8d9c660c251372ed87dad7c1f70532da6b01f",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/docs/images/output/mqc_19_picard_markduplicates.png",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/docs/images/output/mqc_19_picard_markduplicates.png",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 69358,
+      "sha256": "046c908b0252242ab6bd8d6a15571b2297661f7d75006dfe25d3b2711d7152f7",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/docs/images/output/mqc_20_primary_peakcounts.png",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/docs/images/output/mqc_20_primary_peakcounts.png",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 65074,
+      "sha256": "33fbe3bf2d5748baa68ff937fb2369f89b09d990c88abf941c8b3fd148c50b08",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/docs/images/output/mqc_21_fragment_lengths.png",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/docs/images/output/mqc_21_fragment_lengths.png",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 115700,
+      "sha256": "047088537b1d23aac3fcb67f80bb8ec0195ffaeeabe2370c54f9b3e0c19e4947",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/docs/images/output/mqc_22_primary_peakrepro.png",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/docs/images/output/mqc_22_primary_peakrepro.png",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 72845,
+      "sha256": "75b1b61454204aafb80563a10d2486651be80ee2eb984bfbe93a71f0099b3082",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/lib/NfcoreTemplate.groovy",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/lib/NfcoreTemplate.groovy",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 17639,
+      "sha256": "3eda1f3d41ed9243bea56b5a3d7c465c3888f693cd6b300fef6c39c69092917e",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/lib/Utils.groovy",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/lib/Utils.groovy",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 2038,
+      "sha256": "2b3c3009fbc3fbd6a16ca2711868a7755fcd5c20061f739cca4491ea67af1b05",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/lib/WorkflowCutandrun.groovy",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/lib/WorkflowCutandrun.groovy",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 10918,
+      "sha256": "4f01a61f5d761fb494322366e29787dc520305d0892fdb37b1a1d977eac7d2e7",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/lib/WorkflowMain.groovy",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/lib/WorkflowMain.groovy",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 3539,
+      "sha256": "33573f64e800b344579f4b519913c098096ca84861372ba0ca1ebc93f5b49a54",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/local/custom_dumpsoftwareversions.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/local/custom_dumpsoftwareversions.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 5837,
+      "sha256": "2cc8e72b4db73a6c22fa576760af110b0e18590b6cd24e802c5fc1af3c8107f7",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/local/gtf2bed.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/local/gtf2bed.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 879,
+      "sha256": "ed229e9df55164b69a7421b927a7a8af259e0bf4f9de4edc51cfee78087f7d82",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/local/multiqc.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/local/multiqc.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1696,
+      "sha256": "c3ea7d9089d4f5174ef827c805624e54588a87201b14f55e253b8ed3e8d47a11",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/local/peak_counts.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/local/peak_counts.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 947,
+      "sha256": "48e1d3f781be6d5df274c7b684a5775c3a30cff8d990956411a5da772d324f90",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/local/peak_frip.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/local/peak_frip.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1216,
+      "sha256": "25724fc9bd58ef882760de5e9ee031ab84fdaa509b2dfb47d18f53a954b9a632",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/local/samtools_custom_view.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/local/samtools_custom_view.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1016,
+      "sha256": "4e20c34d6e040ef51794b249dbd705f39065a32ac8cc94c7b68b441ab1c1eb44",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/local/for_patch/bedtools/sort/main.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/local/for_patch/bedtools/sort/main.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1059,
+      "sha256": "8aad2dceb8ecc7a87e010aaba7ce6d3d17f63e0026909f72bfaa1bee5542e52a",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/local/for_patch/bedtools/sort/meta.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/local/for_patch/bedtools/sort/meta.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1333,
+      "sha256": "dbdcd58557a0cd128e2a450f35484390d0c8e2b893c30f322d8508794266a5d4",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/local/for_patch/deeptools/bamcoverage/main.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/local/for_patch/deeptools/bamcoverage/main.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1116,
+      "sha256": "98c334b2feb5ab6d4ee8ec177017514c1df47b942fd1d68c52aae013f529208c",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/local/for_patch/samtools/view/main.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/local/for_patch/samtools/view/main.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1804,
+      "sha256": "f8aecc1ed37925974fce73147f641925317522ffa4f623d55d22e29a89064337",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/local/for_patch/samtools/view/meta.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/local/for_patch/samtools/view/meta.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1594,
+      "sha256": "093c0913ee03528a703e7d6317a1ed896b67ab944c848a8da8cafd8d193baa44",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/local/for_patch/trimgalore/main.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/local/for_patch/trimgalore/main.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 3910,
+      "sha256": "b5e96bdd70e3d853354316db072bf25bfd1c3691236830db3476bdf280370f7e",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/local/linux/awk_script.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/local/linux/awk_script.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 958,
+      "sha256": "06f25fc1599d89bc10bff31f55547b7d62a0028d2fdf9189b314afdd01d6f1e4",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/local/linux/awk.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/local/linux/awk.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1076,
+      "sha256": "fcfb30388a8154b66f831f7225aac940c784d59968f5e1bc868619bf6197684e",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/local/linux/cut.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/local/linux/cut.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 950,
+      "sha256": "019693a1b22459ccb02a62a9832b18d20a624bb54f292e690c4bc984e65d7fcf",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/local/linux/sort.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/local/linux/sort.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1005,
+      "sha256": "677590f7153099ef03cc4cb96267a8757e82825a65951ce8424cf32b892ea929",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/local/python/find_unique_reads.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/local/python/find_unique_reads.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1333,
+      "sha256": "8370a1769bb49ac179ba66a2e5623901460a71d0858b45d0f0fa3c61b4c46cbb",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/local/python/frag_len_hist.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/local/python/frag_len_hist.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1351,
+      "sha256": "5cdf52ba04f8e9005022f9fc1f97cc108c617fc9c26c8c03387d06046cfc33bd",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/local/python/igv_session.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/local/python/igv_session.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1997,
+      "sha256": "84e514a4eb2fed8f28b187dc3939807a3746504e57e2160f4bec1780ff326777",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/local/python/merge_sample_metadata.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/local/python/merge_sample_metadata.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1350,
+      "sha256": "f2a2caf0357362469a02bc5a19c7c8fe05e71d6638b09f07c788dddf9b13b798",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/local/python/peak_reprod.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/local/python/peak_reprod.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1537,
+      "sha256": "be29b85524b919742aa8161a3a9cc3a2beb63de0c829e5969719d79bafbcdf43",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/local/python/plot_consensus_peaks.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/local/python/plot_consensus_peaks.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1200,
+      "sha256": "5b8e8b8bf1d9d6d83e86d3871646ffa564a98e2dea802eddb5361a874026c834",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/local/python/samplesheet_check.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/local/python/samplesheet_check.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 615,
+      "sha256": "537791802fcae10a681343f4fced66076cbf469497fcfad2d2c7af98be2fe5bc",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/bedtools/bamtobed/main.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/bedtools/bamtobed/main.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1175,
+      "sha256": "d70750e8d8d93305580c3581743890266985b4b38bca6fb7e123882b08a8af6c",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/bedtools/bamtobed/meta.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/bedtools/bamtobed/meta.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1130,
+      "sha256": "607a51f19f4c84084071a9a4270a6fc6f6a12d750356f1f1caf9b6f93a694374",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/bedtools/complement/main.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/bedtools/complement/main.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1089,
+      "sha256": "13df5c644975b140c6f65305794aed2f9b79231281a43242d98d05312003c63f",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/bedtools/complement/meta.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/bedtools/complement/meta.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1414,
+      "sha256": "50bf4a377c15fffa3df5ea03fc066f54806d3c38e7cc476a5a327bb16005cdfd",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/bedtools/genomecov/main.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/bedtools/genomecov/main.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1923,
+      "sha256": "516b316966a073f64ca25bf5e9f29c85bae00d01e5b472f603e9cd9b2da12d91",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/bedtools/genomecov/meta.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/bedtools/genomecov/meta.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 2010,
+      "sha256": "f71dd57f48813e3d6fd569180bd4f0b706c70de0109623208af4dd75626b4f61",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/bedtools/intersect/main.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/bedtools/intersect/main.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 2075,
+      "sha256": "77a88e68fa27784199bf67068af5b42c60c1887c6c3a961926f2794217a59e53",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/bedtools/intersect/meta.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/bedtools/intersect/meta.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1636,
+      "sha256": "fc76b8c7813b2f5a08bd28e4fe1af5d2917f17caea0763c7073f53138dc80697",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/bedtools/merge/main.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/bedtools/merge/main.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1290,
+      "sha256": "a0d8504dc4f4d840b4c3d5322bf74a69bcca8214bfaca0a516a688b79daf3d25",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/bedtools/merge/meta.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/bedtools/merge/meta.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1261,
+      "sha256": "5049c8accc2f05a24bcd34c98f49574128906c67f215bda353d64f812f1e083d",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/bowtie2/align/main.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/bowtie2/align/main.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 3538,
+      "sha256": "3a19667bcaff0db8eb2914debac3f56e1f63fa4f00bd89d4eb1cfdadb20f6dbf",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/bowtie2/align/meta.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/bowtie2/align/meta.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1903,
+      "sha256": "3936e86abb4620f1146432b017456f9387cc51f02fe34ade104915619ad0356e",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/bowtie2/build/main.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/bowtie2/build/main.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1249,
+      "sha256": "20688ca91d5730903e561787a638285882d4a8f94bb4dd6d845439d210a0d072",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/bowtie2/build/meta.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/bowtie2/build/meta.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1197,
+      "sha256": "80bb4f53846181d6dab162a1930116f4eacae60a25d4b551c85056466b55a9f9",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/cat/fastq/main.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/cat/fastq/main.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 2557,
+      "sha256": "3f14818d9d63fa812a82241ad839859c9d801c8c73c3006d66404d78d714d27f",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/cat/fastq/meta.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/cat/fastq/meta.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1065,
+      "sha256": "155b43620ac044008c412b3a41c860ad4e6b8458b9854dd20b21591547c3cb18",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/cat/fastq/tests/main.nf.test",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/cat/fastq/tests/main.nf.test",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 4633,
+      "sha256": "d4bc21f88b65bafb5b988f5ac28fc692e468d3d31f444d6f5ef8bcb163e99185",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/cat/fastq/tests/main.nf.test.snap",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/cat/fastq/tests/main.nf.test.snap",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 2295,
+      "sha256": "65c442422cbae452e1e8a100d78615f0166d6f2ed448b5306474873161d51a65",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/cat/fastq/tests/tags.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/cat/fastq/tests/tags.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 44,
+      "sha256": "6142de0ad42cdfe33898d558fb1ce610825711d5f9de5c93920d6e12a752ce9a",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/custom/getchromsizes/main.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/custom/getchromsizes/main.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1265,
+      "sha256": "eb5e27e87ff684ef4d13dd54aefe9196e799ce31cbe74c9051109b849e7a3f52",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/custom/getchromsizes/meta.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/custom/getchromsizes/meta.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1422,
+      "sha256": "aad5ac62f67f93497755a38fdfebe18bb665cae3cdc2da6e66f2569a78ee53f8",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/custom/getchromsizes/tests/main.nf.test",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/custom/getchromsizes/tests/main.nf.test",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1432,
+      "sha256": "7d2102d26189a2ff2ff4133f45992edade809f51a57c0fd4a78a938f7e49a08e",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/custom/getchromsizes/tests/main.nf.test.snap",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/custom/getchromsizes/tests/main.nf.test.snap",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 4038,
+      "sha256": "5e44165db6f0d20c0fdcb82eddc2d83bc04402854e784c10fe0cdb3802db4303",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/custom/getchromsizes/tests/tags.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/custom/getchromsizes/tests/tags.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 66,
+      "sha256": "2261b527c7591e5bb352b935ffa2a2cff6075ff759cb4b63c46d1b998ca982b4",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/deeptools/computematrix/main.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/deeptools/computematrix/main.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1184,
+      "sha256": "c664ba3688bb35fde11e92623775e13e62c1ae9a155444c5440065d9e74fd462",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/deeptools/computematrix/meta.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/deeptools/computematrix/meta.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1631,
+      "sha256": "30c02df547c149e1adabc55578808fc44b2f46e48063635357e0c5ee5082c4a6",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/deeptools/multibamsummary/main.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/deeptools/multibamsummary/main.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1073,
+      "sha256": "5e14b20995c0cf48876e29f67d187b5e6f7cd5b702bd8ea3b1d52a9f873a9bb7",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/deeptools/multibamsummary/meta.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/deeptools/multibamsummary/meta.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1514,
+      "sha256": "d2d01233be07db79eab3048d60b352a4792eaaeb8e7fee4d1381c04667fb998f",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/deeptools/plotcorrelation/main.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/deeptools/plotcorrelation/main.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1291,
+      "sha256": "b8ffcd1feaf9756976dd01a5580e38436fb6726d034702d2dde25b059d2428b5",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/deeptools/plotcorrelation/meta.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/deeptools/plotcorrelation/meta.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1859,
+      "sha256": "cf9f49e7c54cda89c7e6088f09eb582db7f94a8c051fe5093e17bf4cc43c397b",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/deeptools/plotfingerprint/main.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/deeptools/plotfingerprint/main.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1425,
+      "sha256": "97fa5f6d0c6f28b1307b81c704bb73f5223bf3ac6b4f9ebb0507fc49dc44e729",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/deeptools/plotfingerprint/meta.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/deeptools/plotfingerprint/meta.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1619,
+      "sha256": "5c506344ffbeb5150bf8e8608a92bb3f9757d6f6c4bd0ec8c50bf5c3c97ce7b9",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/deeptools/plotheatmap/main.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/deeptools/plotheatmap/main.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1054,
+      "sha256": "446a6275552c4b5f1b1518390a74587908479cabae5074a4e80f81c7f7006637",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/deeptools/plotheatmap/meta.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/deeptools/plotheatmap/meta.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1474,
+      "sha256": "a03afb5fd7f20f7a6b995ac94c3de6f87cb0437599343607b6ced238bb202ec1",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/deeptools/plotpca/main.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/deeptools/plotpca/main.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1016,
+      "sha256": "cf75d522b70490dd845728e1926abe01adf7186bf5826024e95b9281de1a55a0",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/deeptools/plotpca/meta.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/deeptools/plotpca/meta.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1486,
+      "sha256": "b968fa931a80c607bc7fa877f8df7b4d3beee70fca025bf61324ad74a0b8c688",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/fastqc/main.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/fastqc/main.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1808,
+      "sha256": "af98a85357dd177c10fe41e727337bd42343323d2a849a74ec1282a37f4ab43f",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/fastqc/meta.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/fastqc/meta.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1554,
+      "sha256": "838e10bc16057050afb3517cf538ef450f8cc32af86a6dc174f9c34c0587a39e",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/fastqc/tests/main.nf.test",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/fastqc/tests/main.nf.test",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1434,
+      "sha256": "6e041b0cbf884fc54c18504c148d2e8115b7dae9d91ae5b6caa095df5fc9f8d7",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/fastqc/tests/main.nf.test.snap",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/fastqc/tests/main.nf.test.snap",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 203,
+      "sha256": "a33736c775903f50ec408d66fa094a3ce828a16aed9629a05bcf5138f9130ae4",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/fastqc/tests/tags.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/fastqc/tests/tags.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 38,
+      "sha256": "1fbdb16ba4e8b9eefc0019dcabf9b6df5ceb0ae4033fa8947ecf63fe8d01b154",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/gunzip/main.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/gunzip/main.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1313,
+      "sha256": "ec50ecbb436091d484933fe0d4a7ed323b11b3601b5860a643dd19230751516c",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/gunzip/meta.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/gunzip/meta.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 968,
+      "sha256": "f464f10d4a7d0eeb458927a104fce2fc5c32d3f07bc6139bac0bf5fc8615d16b",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/gunzip/tests/main.nf.test",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/gunzip/tests/main.nf.test",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 754,
+      "sha256": "036dc802812468a79d5353e0683b56447a7faf1507392cecc5fc7802a2fc81de",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/gunzip/tests/main.nf.test.snap",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/gunzip/tests/main.nf.test.snap",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 886,
+      "sha256": "252205fb0ce51fdf4c87dac134b67e7a42eaa6b6c386ccf7671d3bae8732b2bb",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/gunzip/tests/tags.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/gunzip/tests/tags.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 38,
+      "sha256": "7486e17eb786d0b148861b7a1e426b1f007aff31d6c12868ec26871633840844",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/macs2/callpeak/main.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/macs2/callpeak/main.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1720,
+      "sha256": "608bd99b396b747d021fb21217a194d65ba85bd1000d5105fb3bda94e192b701",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/macs2/callpeak/meta.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/macs2/callpeak/meta.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1796,
+      "sha256": "dc366adf4a382494de719c95fc4b00a2b98584fd0737ca8de6ead76d80f0fe99",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/picard/markduplicates/main.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/picard/markduplicates/main.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 2182,
+      "sha256": "f271a7a06f4ee92082d4195f3cdf593e492b4d1ce1e9b641588cad704d925f48",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/picard/markduplicates/meta.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/picard/markduplicates/meta.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1983,
+      "sha256": "8d86afdda207025ba27c195ba754bad4475fc51f9705c94c7ee8820b08b65e8f",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/picard/markduplicates/tests/main.nf.test",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/picard/markduplicates/tests/main.nf.test",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 3908,
+      "sha256": "1f48ee0e101f680ae64259b25ac941e682a9f21b7a59b51ef73631c0d7929f29",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/picard/markduplicates/tests/main.nf.test.snap",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/picard/markduplicates/tests/main.nf.test.snap",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1219,
+      "sha256": "88ace0d3043b0c8ab27158e3e5da46d44dec1136582276d822a1ec12584bd82e",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/picard/markduplicates/tests/nextflow.config",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/picard/markduplicates/tests/nextflow.config",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 152,
+      "sha256": "136953c6ce7a5d87fae78bf5303eade29803cef4a52c6d6dc4b3df3483313f59",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/picard/markduplicates/tests/tags.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/picard/markduplicates/tests/tags.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 68,
+      "sha256": "3957327ff6eaf8849807d2ebeb75dfe8228815a2624c792e69dfe6b08e321dd3",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/preseq/lcextrap/main.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/preseq/lcextrap/main.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1163,
+      "sha256": "cc1e9435fe07d874263c6897da1e374df7aa19a443a6c8f0d749b7e54654f7eb",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/preseq/lcextrap/meta.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/preseq/lcextrap/meta.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1369,
+      "sha256": "97537f71a5d88acb40ccd5b80e34bdf04982f31e71c5f2d15b87351b74df759b",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/samtools/faidx/main.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/samtools/faidx/main.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1442,
+      "sha256": "0eff730febf5779b7d9e351afba3493907b03e5cd4cb18f45c38acaf20f736fd",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/samtools/faidx/meta.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/samtools/faidx/meta.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1555,
+      "sha256": "2752abd0bf0fcfd45b4971004a302d1d615591c45983c8f258441d6e88a6f078",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/samtools/flagstat/main.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/samtools/flagstat/main.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1273,
+      "sha256": "66675d0c6f1b6aa160ca0e27c8fc55e1ae8e55b308143d80f39200734b62b4ef",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/samtools/flagstat/meta.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/samtools/flagstat/meta.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1429,
+      "sha256": "4625ddf9a8425cc48d8c189e2ddd5e9f7a00d0d635229b3485b4d3c482beeb2e",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/samtools/idxstats/main.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/samtools/idxstats/main.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1277,
+      "sha256": "0c73d6de70d0559512e819e18820e8b0e7850b2f4d644723028e9d36c36e8218",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/samtools/idxstats/meta.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/samtools/idxstats/meta.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1431,
+      "sha256": "74bd2c4d139f84216a96c2181307451fe0b8e9edc8a9dbb286541e2527fdb478",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/samtools/index/main.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/samtools/index/main.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1307,
+      "sha256": "6ec52fa0b0290ccc1df78ad34c88cb65992001060146dbb0fcf1f2b08281fed0",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/samtools/index/meta.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/samtools/index/meta.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1477,
+      "sha256": "a299c84f80ea5dc840e03dea7403afb650164df461e0a21ac1c81534a81bf8c0",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/samtools/sort/main.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/samtools/sort/main.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1432,
+      "sha256": "7723f6107d8017f86ef9a61d83f266807addc5690eb439e9382868e5da53d740",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/samtools/sort/meta.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/samtools/sort/meta.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1346,
+      "sha256": "6cb4c0510f6037d7e94427a9ac6762435e859cf884a977a07bdec0655f02baaa",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/samtools/sort/tests/main.nf.test",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/samtools/sort/tests/main.nf.test",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1588,
+      "sha256": "65cf86870903040c6dea4993a4baa4a293c9647e5ab66abc94d70211271715fe",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/samtools/sort/tests/main.nf.test.snap",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/samtools/sort/tests/main.nf.test.snap",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1128,
+      "sha256": "ab223f6f97b7305d38a558339d708c08a3cd4f792ea25542b205a9a4f6852d0c",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/samtools/sort/tests/nextflow.config",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/samtools/sort/tests/nextflow.config",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 95,
+      "sha256": "d848d7f10884d4f2c458cf5fe199cb28b84c8c43de71107b5075bc8459d73be2",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/samtools/sort/tests/tags.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/samtools/sort/tests/tags.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 95,
+      "sha256": "e3d0bc05feeb586374993a3f5e3d809828fb2858502709ee486428747d676dc2",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/samtools/stats/main.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/samtools/stats/main.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1380,
+      "sha256": "de2e95f85f7dca06a1f503567117c2060551341fc5167b0bd34b9368365dd6d2",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/samtools/stats/meta.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/samtools/stats/meta.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1751,
+      "sha256": "92fcf74a6f748773696dfd79bbde19a680b7d02585f29ab38bcb745cd038b04b",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/samtools/stats/tests/main.nf.test",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/samtools/stats/tests/main.nf.test",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 2314,
+      "sha256": "ad3d901ac4a5403e424eb20287d3e8b5e5b507fcb9507bcc3e45bce53ee49216",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/samtools/stats/tests/main.nf.test.snap",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/samtools/stats/tests/main.nf.test.snap",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 2027,
+      "sha256": "d5ff050456a364400e7a9cb0e40ca7af5bc169d6e2d8cdd4cfaca5f7f6bba157",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/samtools/stats/tests/tags.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/samtools/stats/tests/tags.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 54,
+      "sha256": "046866307af432e280cf50884252797d5291bc72af2cbfb981c3741d585576e1",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/samtools/view/main.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/samtools/view/main.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 2285,
+      "sha256": "1b1d42c0fd087c65de9981dd6bc8f921394f63c5f59dce6d46093470c4ab56ea",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/samtools/view/meta.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/samtools/view/meta.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 2463,
+      "sha256": "848cf796ca045913068590f68122221c5f3d5b5419fc6f8e999f22038fd80ea8",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/seacr/callpeak/main.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/seacr/callpeak/main.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1603,
+      "sha256": "7531cc9c7092dd7e8ee8e331fb2ebe617e18d6992bbc610d2ce2202d6a71f35c",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/seacr/callpeak/meta.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/seacr/callpeak/meta.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1617,
+      "sha256": "36474369eb0d0d8729f8ba5a023a0028697778828d5c464f94681b2fd7439570",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/tabix/bgziptabix/main.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/tabix/bgziptabix/main.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1516,
+      "sha256": "a15568f1c00a5a61d09ce5c013fd0ef071dc0677e92f266f9e51d398e7ece6ed",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/tabix/bgziptabix/meta.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/tabix/bgziptabix/meta.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1340,
+      "sha256": "e8365089c5f4ca8e5c0e5487bc8b0e794d7c499a5bb4eb5314250a25047ea1d3",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/ucsc/bedclip/main.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/ucsc/bedclip/main.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1172,
+      "sha256": "5c5dff882d82ed4fa9a284959845bf27ecd7f8bf92f4a68c67e4c9fe630fe9f3",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/ucsc/bedclip/meta.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/ucsc/bedclip/meta.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1015,
+      "sha256": "00923120fe6c6889098953b0dcaf23c3ca2f5de862f8e0fe1ed5e43d70688760",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/ucsc/bedgraphtobigwig/main.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/ucsc/bedgraphtobigwig/main.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1556,
+      "sha256": "7eed4a5ef4a806fa17d7c3ce583cc7262769ff3db6f1988af4770ec0b5e6678c",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/ucsc/bedgraphtobigwig/meta.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/ucsc/bedgraphtobigwig/meta.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1175,
+      "sha256": "1c0b2fedbcfd7a5db5c8fe2c54d0a07f8417cee03df365f9966abe60a3248ae9",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/untar/main.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/untar/main.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1885,
+      "sha256": "af6cef0c33e30735dbec5a383cefd60ea55c20035d693dd80e3a6d0a47edecb3",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/modules/nf-core/untar/meta.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/modules/nf-core/untar/meta.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1028,
+      "sha256": "caf7ffdd21f0b221eb6b515b53666a669b2bd1d3ef8df7d508a95e1a093f0c57",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/subworkflows/local/align_bowtie2.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/subworkflows/local/align_bowtie2.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 3548,
+      "sha256": "81efcd28e55c33524e8cc94d03fbbae8575edc495c2cd054101a73d02051a8ca",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/subworkflows/local/consensus_peaks.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/subworkflows/local/consensus_peaks.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1001,
+      "sha256": "cd504009dbb9c6c2bd39af5e831d78a30e35428b8743a0e0298bdb17f0486577",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/subworkflows/local/deduplicate_linear.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/subworkflows/local/deduplicate_linear.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 5636,
+      "sha256": "2156463f4b7f95ec99e5e1da9d681eb6b4835922bca092cad01ac7bc76f6c8aa",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/subworkflows/local/deeptools_qc.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/subworkflows/local/deeptools_qc.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 2826,
+      "sha256": "e9ec5339479cf57a2a200a1a63e90f69da440defcb2a7c2989ac3868ec8afd17",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/subworkflows/local/extract_fragments.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/subworkflows/local/extract_fragments.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1356,
+      "sha256": "1ccb1903b246480addbcd7084868cc762bd4e9b2b8a105a71f1415e9dc5900ce",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/subworkflows/local/extract_metadata_awk.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/subworkflows/local/extract_metadata_awk.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 909,
+      "sha256": "10db58f9496f7a952a78896af100f1014b99dc6fb81b6b5a553455d8f2908b7d",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/subworkflows/local/fastqc_trimgalore.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/subworkflows/local/fastqc_trimgalore.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1600,
+      "sha256": "4d96ec8b58cf65ba5a79e0b0cbaaafbb0cbb371fcaf5de6ddefd8f4811a2ad74",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/subworkflows/local/input_check.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/subworkflows/local/input_check.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1453,
+      "sha256": "10f4cd5505c33fcbbef45d87fafd6fa0317e23eb41e4d80c4ef74c0262091a8c",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/subworkflows/local/mark_duplicates_picard.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/subworkflows/local/mark_duplicates_picard.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 3411,
+      "sha256": "3ac1c1c53da15f8f753a6ae95df775b0292b637d39bdd5c4a13366750587dcb9",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/subworkflows/local/peak_qc.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/subworkflows/local/peak_qc.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 5353,
+      "sha256": "cc29f344a3d0fd9c88edf4e3be90e88d28435731c5b0bdbb0078fddb54a1f900",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/subworkflows/local/prepare_genome.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/subworkflows/local/prepare_genome.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 9718,
+      "sha256": "32c3fffdad3aa8a4c1531a75b54aaffe6cf676c69fd5afcae5277cb957d83f2f",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/subworkflows/local/prepare_peakcalling.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/subworkflows/local/prepare_peakcalling.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 6946,
+      "sha256": "96bf4d33dc9b55a70b8c7c1cc1ea768d3b0408bf2e965217b16e4181fdf2c2d6",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/subworkflows/local/samtools_view_sort_stats.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/subworkflows/local/samtools_view_sort_stats.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 2075,
+      "sha256": "9fc90733e7cc12fa72fc134a30bbdda492d56f6725cb8e0b017fed19d9b1d726",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/subworkflows/nf-core/bam_sort_stats_samtools/main.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/subworkflows/nf-core/bam_sort_stats_samtools/main.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1818,
+      "sha256": "a91ba4a18c91a0c8f7ac9707a79b6cc073dbc0df27a7d74a7165ee3f0ef1e5f3",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/subworkflows/nf-core/bam_sort_stats_samtools/meta.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/subworkflows/nf-core/bam_sort_stats_samtools/meta.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1786,
+      "sha256": "3b029148e63725e9211d2fefa0cb99113bcfdaf635ec019f1d10c8ef349e811b",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/subworkflows/nf-core/bam_sort_stats_samtools/tests/main.nf.test",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/subworkflows/nf-core/bam_sort_stats_samtools/tests/main.nf.test",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1992,
+      "sha256": "0331e588fd7021af47ee8ae998bab6b1b505106d333a0bee7dc878680d35d4d6",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/subworkflows/nf-core/bam_sort_stats_samtools/tests/main.nf.test.snap",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/subworkflows/nf-core/bam_sort_stats_samtools/tests/main.nf.test.snap",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 8360,
+      "sha256": "c206a7b34023e4be87378563e4a7548562d733611d3c098e54a1c1e3dd33fb29",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/subworkflows/nf-core/bam_sort_stats_samtools/tests/tags.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/subworkflows/nf-core/bam_sort_stats_samtools/tests/tags.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 77,
+      "sha256": "519c37537652bda36188a8fed91a3acbef86b531a67822a338e6a77c20d546d8",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/subworkflows/nf-core/bam_stats_samtools/main.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/subworkflows/nf-core/bam_stats_samtools/main.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1179,
+      "sha256": "802e9fc25c59ab30d4ca25808752021a5bbb911bf14a8c1449572a6ba747502e",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/subworkflows/nf-core/bam_stats_samtools/meta.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/subworkflows/nf-core/bam_stats_samtools/meta.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1191,
+      "sha256": "96e3e7149381f99a68afb5c68a81705d9c53313628149faa2975258dd4f31fd5",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/tests/_template.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/tests/_template.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 2460,
+      "sha256": "79c0fa80a98c90e2316f7523da41e0111d89cca9539ddc49a50322d3228f2c7c",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/tests/test_01_genome_options.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/tests/test_01_genome_options.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 3198,
+      "sha256": "52fb5bd73398ab8504b0e585a5095c2b2ea164ee7532fec75feaf107aec8f5f2",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/tests/test_02_samplesheet_check.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/tests/test_02_samplesheet_check.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 9786,
+      "sha256": "1531e9ffa0ffb3a94a7f30b8c6780e976dfa5924b7a4131ac2ed1b62062b0f5b",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/tests/test_03_ailgnment_filtering.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/tests/test_03_ailgnment_filtering.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 436,
+      "sha256": "bbb94f562a6dce4ec145308e19619c970eec5a5373c884cfbe3d374800dd9329",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/tests/test_04_bam_scaling.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/tests/test_04_bam_scaling.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 2608,
+      "sha256": "e998218bf8e829d2ebe24e8b3a78588ea4a5b287912f0d509059850761f34c0b",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/tests/test_05_peak_callers.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/tests/test_05_peak_callers.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 4670,
+      "sha256": "316fc739da466814597e1888bb5f7b3e00042cdf1fc1c6b0f31401b4bc8ce6ee",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/tests/test_06_consensus_peaks.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/tests/test_06_consensus_peaks.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1472,
+      "sha256": "55b66b136c8fb79619177c72d68c905cbf129e5df855d05def71b946db3c5112",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/tests/test_verify_output_01_only_input.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/tests/test_verify_output_01_only_input.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 245,
+      "sha256": "a6c5b0eeb85d7374f1fe81431fc3646e9a9f13e26b407af3472cb322f2ad537d",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/tests/test_verify_output_01_save_merged.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/tests/test_verify_output_01_save_merged.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 366,
+      "sha256": "49f5b4d4eb9951d4b430eec636b840daef0b9c6d0de183979af76718797bca7a",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/tests/test_verify_output_01_save_trimmed.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/tests/test_verify_output_01_save_trimmed.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 277,
+      "sha256": "54db0cb70fb35b10297f16ebe79c06bbd8e788d9e43d611780f0fed304b14711",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/tests/test_verify_output_01_skip_fastqc.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/tests/test_verify_output_01_skip_fastqc.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 847,
+      "sha256": "4c54e56203401d34c85399816ec9c65e4570dee3317baab361503f3ade7b1de0",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/tests/test_verify_output_01_skip_trimming.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/tests/test_verify_output_01_skip_trimming.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 321,
+      "sha256": "7442c8325a9945f9e69e95e5f6d1be34292b0bf2a0caa7960cb761903d79f033",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/tests/test_verify_output_02_save_ref.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/tests/test_verify_output_02_save_ref.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 507,
+      "sha256": "7ea6e37ea71294f3f984b7075e3d67d7715cfb921088ff4cc9058133847b3c06",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/tests/test_verify_output_03_only_align.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/tests/test_verify_output_03_only_align.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1460,
+      "sha256": "1db0b39dc067c64d11cddab6eeb0c48ca48277fda9a403265654c33aa5f7e418",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/tests/test_verify_output_03_save_align_intermed.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/tests/test_verify_output_03_save_align_intermed.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 652,
+      "sha256": "ef75dc71801b706a4719124f3ca0926af7b7b583c12e2ea401503349a40c9d09",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/tests/test_verify_output_03_save_spikein_align.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/tests/test_verify_output_03_save_spikein_align.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 715,
+      "sha256": "8d9e337f5ebbc8947a58e1afebcb33352da5a165aa4f703b3a77de94725bb94e",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/tests/test_verify_output_03_save_unaligned.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/tests/test_verify_output_03_save_unaligned.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 589,
+      "sha256": "d080f5c0eb403dc30ee15b9bfff07756a454cd88eff04ae7e895f212335aad18",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/tests/test_verify_output_04_duplicates.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/tests/test_verify_output_04_duplicates.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 7017,
+      "sha256": "6835c8e21c714adbbf104318d21a3bf43c362d25d685aa6af55d6863c3f5caa3",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/tests/test_verify_output_04_only_filtering.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/tests/test_verify_output_04_only_filtering.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1594,
+      "sha256": "53c2aa84a4bd6a4ef3fe588e493a7486065c4d48af3893756c02c1f292682812",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/tests/test_verify_output_05_only_peak_calling.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/tests/test_verify_output_05_only_peak_calling.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1129,
+      "sha256": "104a8c1b186835bb99a042e841811fae0ec0d32ba15a5320024161d70fed0634",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/tests/test_verify_output_06_skip_dt_qc.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/tests/test_verify_output_06_skip_dt_qc.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1136,
+      "sha256": "6e526ece6fff72d921522a30898b42acbf9602e394c306085760ba965fc8d00d",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/tests/test_verify_output_06_skip_heatmaps.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/tests/test_verify_output_06_skip_heatmaps.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 1565,
+      "sha256": "fc625da045f50cb9e2c78c92bc82c694beb5c6d7001b24a830547559010adb88",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/tests/test_verify_output_06_skip_igv.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/tests/test_verify_output_06_skip_igv.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 694,
+      "sha256": "bcc2e908bfd980f3fa05f3409fc2ceb8b18834799f4dab5ca79c8be1d277b442",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/tests/test_verify_output_06_skip_multiqc.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/tests/test_verify_output_06_skip_multiqc.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 708,
+      "sha256": "8832dfff73465d9524567fd1a60808efde64728924d537135f9fc3a9faa1687d",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/tests/test_verify_output_06_skip_peak_qc.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/tests/test_verify_output_06_skip_peak_qc.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 766,
+      "sha256": "162cc9e529c0e822f00186d28c6ae92830428d9ebe39a194633f84d8bf8883c8",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/tests/test_verify_output_06_skip_preseq.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/tests/test_verify_output_06_skip_preseq.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 860,
+      "sha256": "e068402572c991f6e965f108d18c66df07a48cb0d71b0e478d36bbb4d4c6fcdc",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/tests/test_verify_output_06_skip_reporting.yml",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/tests/test_verify_output_06_skip_reporting.yml",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 624,
+      "sha256": "098bca81c7d795502a18ef12165e791f533bd00cf7fb4ef7924fade357dc50b9",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/tests/config/nextflow.config",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/tests/config/nextflow.config",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 458,
+      "sha256": "1c2fe00e7ecaa6c873a3232a72b6bb925d53e0abffc4ebca8c789db3a103f88c",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/cutandrun-source/cutandrun-3.2.2/workflows/cutandrun.nf",
+      "archived": "90_nfcore_source/cutandrun-3.2.2/workflows/cutandrun.nf",
+      "purpose": "本地 nf-core/cutandrun 3.2.2 源码快照",
+      "status": "未与服务器实际源码逐文件比较",
+      "bytes": 40128,
+      "sha256": "0cca22d4e3cd388b8c696c53d8028889c0670334bd2cea6cc1a325d89938e0b8",
+      "newline_style": null,
+      "copy_matches_source": true
+    },
+    {
+      "source": "work/organize_cuttag_code_20261014.ps1",
+      "archived": "tools/organize_cuttag_code_20261014.ps1",
+      "purpose": "代码归档、来源清单和 SHA256 生成",
+      "status": "本次打包工具；需要原工作区",
+      "bytes": 23923,
+      "sha256": "d7ce7893dfd2c1be1f21290dfa3f711fd6d60613c70910753134414634e6e556",
+      "newline_style": "LF",
+      "copy_matches_source": true
+    }
+  ],
+  "missing_server_files": [
+    "v1 run_cutandrun.slurm",
+    "config/params.yaml",
+    "config/samplesheet.csv",
+    "cutandtag_env.sh",
+    "local_conda.config",
+    "fragment length Slurm source",
+    "pre-v2 merged bigWig script"
+  ]
+}
