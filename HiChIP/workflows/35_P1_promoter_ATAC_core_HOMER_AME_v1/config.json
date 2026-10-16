@@ -1,0 +1,22 @@
+{
+  "source_ATAC_core_run": "/mnt/nas/swine/home/jxwu/Projects/A/07.HiChIP/NFkB_target_loci_0h_6h_v2/06_chromatin_state_v1/27_Yun_ATAC_consensus_H3K27ac_CRE_motif_v1/run_41129",
+  "source_P1_promoter_state_run": "/mnt/nas/swine/home/jxwu/Projects/A/07.HiChIP/NFkB_target_loci_0h_6h_v2/06_chromatin_state_v1/34_P1_promoter_strength_weaken_v1/run_42216",
+  "reference_fasta": "/mnt/nas/swine/home/jxwu/Projects/references/pig/Sscrofa11.1/genome.fa",
+  "motif_database": "/mnt/nas/swine/home/jxwu/Projects/references/motifs/JASPAR2026/JASPAR2026_CORE_vertebrates_non-redundant_pfms_meme.txt",
+  "results": "/mnt/nas/swine/home/jxwu/Projects/A/07.HiChIP/NFkB_target_loci_0h_6h_v2/06_chromatin_state_v1/35_P1_promoter_ATAC_core_HOMER_AME_v1",
+  "analysis_env": "/mnt/nas/swine/home/jxwu/Projects/A/envs/hichip_locus",
+  "motif_env": "/mnt/nas/swine/home/jxwu/Projects/A/envs/motif",
+  "fold_threshold": 1.5,
+  "motif_window_bp": 500,
+  "min_raw_tags_active_state": 5,
+  "max_N_fraction": 0.05,
+  "max_GC_difference": 0.05,
+  "minimum_matched_fraction": 0.9,
+  "minimum_motif_pairs": 20,
+  "top_motifs_per_panel": 20,
+  "homer_threads": 3,
+  "run_ame": true,
+  "run_homer": true,
+  "run_de_novo": false,
+  "seed": 20260918
+}

@@ -1,0 +1,44 @@
+# Large/private analysis inputs and outputs must stay outside the code repository.
+*.bam
+*.bai
+*.bw
+*.bigwig
+*.bedpe
+*.fa
+*.fasta
+*.fastq
+*.fq
+*.gtf
+*.meme
+*.tsv
+*.tsv.gz
+*.bed
+*.pdf
+*.png
+*.svg
+*.html
+*.zip
+*.tar.gz
+*.out
+*.err
+*.log
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+
+# Runtime directories are never source code.
+run_*/
+export_*/
+counts/
+logs/
+motifs/
+peaks/
+targets/
+regions/
+
+# Do not commit auth material.
+.env
+.env.*
+*.pem
+*.key
